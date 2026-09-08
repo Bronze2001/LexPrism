@@ -2,7 +2,7 @@
 name: lexprism
 description: 为律师完成法律研究、尽调与合同合规分析、法律文书起草，以及争议材料整理、事实时间线、法律流程图/交易架构图绘制和证据关联；通过形式化硬门控（G1~G5）、法律依据冻结快照和独立三审计员防线，在原文依据、分析和交付文书之间保留可复核关系，并依据带适用范围的专家反馈修订。用户提出法律工作任务、补充材料或要求复核既有法律产出时使用。
 metadata:
-  version: 0.2.1-source-routing-diagrams
+  version: 0.2.2-source-routing-diagrams
 ---
 
 # LexPrism
