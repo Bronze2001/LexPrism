@@ -8,6 +8,8 @@
 
 - [Agent框架](docs/Agent框架.md)：模块、流程、证据记录和专家反馈闭环。
 - [开发计划](docs/开发计划.md)：分阶段任务、依赖与验收条件。
+- [法律流程图工作台](tools/drawio/README.md)：本地开箱即用的流程图与架构图编辑器（`tools/drawio/index.html`），内置股权穿透、并购交割与证据链实务模板。
+- [法律流程图与架构图规范](skills/lexprism/references/diagrams.md)：非诉与诉讼业务中的图表设计标准与律所专业配色规范。
 - [海外法律数据接入评估](docs/海外法律数据接入评估.md)：官方MCP／API、适用范围和接入路线。
 - [千问办公部署与联调](docs/千问办公部署与联调.md)：取得权限后的实际操作与验证。
 - [LexPrism技能入口](skills/lexprism/SKILL.md)：一个可移植入口，按任务加载工作流参考。
