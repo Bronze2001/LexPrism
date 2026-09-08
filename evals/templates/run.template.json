@@ -1,0 +1,21 @@
+{
+  "record_type": "template_not_a_run",
+  "case_id": null,
+  "run_id": null,
+  "created_at": null,
+  "skill_version": "0.1.0-framework",
+  "input_version": null,
+  "source_mode": null,
+  "jurisdictions": [],
+  "legal_as_of": null,
+  "host": null,
+  "model": "unknown",
+  "condition": null,
+  "steps": [],
+  "tool_calls": [],
+  "sources": [],
+  "claims": [],
+  "output_location": null,
+  "unresolved_items": [],
+  "expert_review_status": "not_reviewed"
+}

@@ -1,0 +1,21 @@
+{
+  "record_type": "template_not_expert_feedback",
+  "feedback_id": null,
+  "case_id": null,
+  "run_id": null,
+  "draft_version": null,
+  "reviewer_id": null,
+  "reviewed_at": null,
+  "location": null,
+  "original_comment": null,
+  "category": null,
+  "scope": "pending",
+  "scope_detail": null,
+  "severity": null,
+  "proposed_change": null,
+  "decision": "pending",
+  "decision_reason": null,
+  "applied_skill_version": null,
+  "regression_case_ids": [],
+  "regression_status": "not_run"
+}

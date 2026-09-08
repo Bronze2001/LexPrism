@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "courtlistener": {
+      "type": "streamable-http",
+      "url": "https://mcp.courtlistener.com/"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "mcpServers": {
+    "pkulaw-law-search": {
+      "type": "streamable-http",
+      "url": "https://apim-gateway.pkulaw.com/mcp-law-search-service",
+      "headers": {
+        "Authorization": "Bearer YOUR_ACCESS_TOKEN"
+      }
+    },
+    "pkulaw-law-keyword": {
+      "type": "streamable-http",
+      "url": "https://apim-gateway.pkulaw.com/mcp-law",
+      "headers": {
+        "Authorization": "Bearer YOUR_ACCESS_TOKEN"
+      }
+    },
+    "pkulaw-law-item-keyword": {
+      "type": "streamable-http",
+      "url": "https://apim-gateway.pkulaw.com/mcp-fatiao",
+      "headers": {
+        "Authorization": "Bearer YOUR_ACCESS_TOKEN"
+      }
+    },
+    "pkulaw-case-semantic-search": {
+      "type": "streamable-http",
+      "url": "https://apim-gateway.pkulaw.com/mcp-case-search-service",
+      "headers": {
+        "Authorization": "Bearer YOUR_ACCESS_TOKEN"
+      }
+    },
+    "pkulaw-citation-validator": {
+      "type": "streamable-http",
+      "url": "https://apim-gateway.pkulaw.com/pku_citation_validator",
+      "headers": {
+        "Authorization": "Bearer YOUR_ACCESS_TOKEN"
+      }
+    }
+  }
+}
