@@ -1,0 +1,2 @@
+# Streamable HTTP MCP client used by scripts/qwen_chat.py.
+mcp==1.27.2

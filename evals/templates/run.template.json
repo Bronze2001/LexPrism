@@ -3,7 +3,7 @@
   "case_id": null,
   "run_id": null,
   "created_at": null,
-  "skill_version": "0.1.0-framework",
+  "skill_version": "0.2.1-source-routing",
   "input_version": null,
   "source_mode": null,
   "jurisdictions": [],
