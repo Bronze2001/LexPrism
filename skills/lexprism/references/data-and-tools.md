@@ -25,6 +25,9 @@
 
 - Task 增加 output_mode（comparison／clean／both）、输出偏好与审查立场；Draft 增加底本版本和各视图对应版本。
 - Source 增加提供渠道、原始来源类型、source_tier（T1／T2／T3／pending）、分级规则版本和理由；真实性、译文、效力和适用性保持独立状态。
+- 团队分级采用 research.md 的现行定义；另记 original_language、translation_type、tier_adjustment_reason。可下载材料记录 archive_status（saved／failed／unavailable／restricted）、原始网址、保存位置与实际可得哈希，不能用“有链接”代替已留档。
+- Citation 记录 citation_id、claim_id、passage_id、逐处脚注位置、文末汇总项；同一来源的不同语句分开定位。法律使用等级与效力字段分开保存。
+- 本地限制记录 processing_boundary（local_only／authorized_host）、核实的处理引擎和存储边界；未确认时为 unknown，不依据脚本位于本机推定模型离线。
 - 材料影响记录包括 source_id／passage_id、目标 claim_id／段落 ID、关系、匹配理由、采用／不采用原因、旧／新版本与待核实事项。
 - 合同清单记录包括原序号 0—30、子项、适用性、状态、条款定位、依据、风险及修改建议。
 - 视图共享主张和引用，不独立保存相互漂移的结论；增量修订记录旧／新文字及理由，文末说明随实质风险变化更新。
