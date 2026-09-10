@@ -2,7 +2,7 @@
 name: lexprism
 description: 为律师完成法律研究、尽调与合同合规分析、法律文书起草，以及争议材料整理、事实时间线、法律流程图/交易架构图绘制和证据关联；通过形式化硬门控（G1~G5）、法律依据冻结快照和独立三审计员防线，在原文依据、分析和交付文书之间保留可复核关系，并依据带适用范围的专家反馈修订。用户提出法律工作任务、补充材料或要求复核既有法律产出时使用。
 metadata:
-  version: 0.3.0-requirements-feedback
+  version: 0.3.1-adaptive-routing
 ---
 
 # LexPrism
@@ -17,7 +17,7 @@ metadata:
 
 先理解用户的原始口语问题，再确定文种与必要信息，按 [intake-and-samples.md](references/intake-and-samples.md) 处理模糊请求和样本模仿。不要要求用户先写成专业提示词。用户要求“不上传云／仅本地翻译”时，先读取 [translation-privacy.md](references/translation-privacy.md)，确认执行边界后再处理材料。
 
-检索前先按法律问题分流：确认案件仅需中国内地法、不涉及境外法源时，使用北大法宝实际可用的 MCP 工具，不启动海外数据库检索。不能仅因当事人是中国主体或案件发生在中国就排除其他法域；具体判断、工具不可用时的处理与后续扩展规则见 [research.md](references/research.md) 的“法源分流规则”。仅给定材料模式仍不调用外部检索。
+检索前按法域、材料类型和覆盖需求选源，参见 [mcp-routing.md](references/mcp-routing.md)。内地法通常首选北大法宝；其他法域按细分任务选择。路由只作引导，模型可根据实际或潜在不足自主搜索网络、组合或改用其他可用 MCP，无需先等首选失败或为换源重复确认；仅给定材料、不联网及本地隐私限制仍生效。
 
 | 任务 | 按需读取 |
 | --- | --- |

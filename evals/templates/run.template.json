@@ -3,7 +3,7 @@
   "case_id": null,
   "run_id": null,
   "created_at": null,
-  "skill_version": "0.3.0-requirements-feedback",
+  "skill_version": "0.3.1-adaptive-routing",
   "input_version": null,
   "source_mode": null,
   "jurisdictions": [],
