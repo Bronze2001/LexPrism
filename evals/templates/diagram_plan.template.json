@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LexPrism Legal Diagram Plan Contract",
+  "description": "前置图表规划契约：在正式绘制任何复杂法律图表前，强制确立三问原则、分类等级与依据绑定",
+  "type": "object",
+  "properties": {
+    "as_of_date": {
+      "type": "string",
+      "description": "法律基准日 (如: 2026-09-08)"
+    },
+    "case_id": {
+      "type": "string",
+      "description": "案件编号或委托标识"
+    },
+    "planned_diagrams": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "diagram_id": {
+            "type": "string",
+            "description": "图表唯一编号 (如: DIA-001)"
+          },
+          "title": {
+            "type": "string",
+            "description": "图表标题"
+          },
+          "diagram_type": {
+            "type": "string",
+            "enum": [
+              "Type 1: Diagnostic",
+              "Type 2: Comparison",
+              "Type 3: Core Delivery",
+              "Type 4: Appendix"
+            ],
+            "description": "图表四级分类"
+          },
+          "three_questions": {
+            "type": "object",
+            "properties": {
+              "supports_claim": {
+                "type": "string",
+                "description": "支持的具体法律主张或事实认定 (What Claim?)"
+              },
+              "source_artifacts": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "溯源的冻结证据或文件切片编号 (Which Source?)"
+              },
+              "delivery_section": {
+                "type": "string",
+                "description": "嵌入在交付文书的正文章节位置 (Where in Delivery?)"
+              }
+            },
+            "required": [
+              "supports_claim",
+              "source_artifacts",
+              "delivery_section"
+            ]
+          },
+          "lawyer_signoff_required": {
+            "type": "boolean",
+            "description": "是否必须经律师在 [G4 👤] 显式签署 (Type 3 强制为 true)"
+          },
+          "output_path": {
+            "type": "string",
+            "description": "成果保存路径 (.drawio 文件)"
+          },
+          "render_check_status": {
+            "type": "string",
+            "enum": [
+              "PENDING",
+              "INSPECTED_PASS",
+              "BLOCKED"
+            ],
+            "description": "渲染审查状态"
+          }
+        },
+        "required": [
+          "diagram_id",
+          "title",
+          "diagram_type",
+          "three_questions",
+          "lawyer_signoff_required",
+          "output_path",
+          "render_check_status"
+        ]
+      }
+    }
+  },
+  "required": [
+    "as_of_date",
+    "case_id",
+    "planned_diagrams"
+  ]
+}
