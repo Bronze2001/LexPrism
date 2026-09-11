@@ -2,7 +2,7 @@
 name: lexprism
 description: 为律师完成法律研究、尽调与合同合规分析、法律文书起草，以及争议材料整理、事实时间线、法律流程图/交易架构图绘制和证据关联；通过形式化硬门控（G1~G5）、法律依据冻结快照和独立三审计员防线，在原文依据、分析和交付文书之间保留可复核关系，并依据带适用范围的专家反馈修订。用户提出法律工作任务、补充材料或要求复核既有法律产出时使用。
 metadata:
-  version: 0.3.1-adaptive-routing
+  version: 0.3.2-diagram-controlled
 ---
 
 # LexPrism
@@ -47,9 +47,9 @@ Actionable Open Gaps: [待办缺口数]
 | --- | --- | --- | --- |
 | **[G1]** | **INTAKE_LOCKED** (受理门控) | 锁定目标、读者、法域、事实前提、法律基准日、交付物（含文书及交易架构/流程图）和来源模式。**仅当缺失信息会改变检索范围或结论时追问**；其他列为假设。未锁定前不盲目检索。 | [nonlitigation.md](references/nonlitigation.md) / [disputes.md](references/disputes.md) / [diagrams.md](references/diagrams.md) |
 | **[G2]** | **SOURCES_ENTITLED** (来源准入门控 ★) | 完成上游数据源/MCP能力协商。区分官方原文、商业转载、第三方摘要与AI报告。生成并固化 `frozen_citations.json` 依据快照。仅摘要者严禁标为全文。 | [research.md](references/research.md) / [data-and-tools.md](references/data-and-tools.md) |
-| **[G3]** | **CLAIMS_MAPPED** (主张映射门控) | 将文书/分析的每一项实质法律主张（Claim）、交易架构步骤及股权百分比与切片（Passage）及冻结来源绑定。无依据的关键结论强制悬挂为待办缺口，严禁脑补推论。 | [drafting-review.md](references/drafting-review.md) / [diagrams.md](references/diagrams.md) |
-| **[G4 👤]** | **LAWYER_SANCTIONED** (律师裁决门控 ★) | **人类决策硬门禁**。在起草定稿前，将实质法律风险、重大行动建议、推论前提和冲突事实呈交律师签署；**未经律师确认不得撤除草稿限制**。 | [expert-feedback.md](references/expert-feedback.md) |
-| **[G5]** | **CITATION_AUDITED** (三方审计门控 ★) | 独立三审计员（一致性审计、反面覆盖审计、文风与合规审计）全部签发 `PASS`，核查图文数据一致性，出具 `audit_report.json`。全票通过后方可解除草稿水印正式交付。 | [drafting-review.md](references/drafting-review.md) |
+| **[G3]** | **CLAIMS_MAPPED** (主张映射门控) | 将实质法律主张（Claim）与切片及冻结来源绑定。涉及图表时出具 `diagram_plan.json`，确立三问原则与 Type 1~4 分级，股权比例与交易步骤强制挂钩证据，无依据的关键结论悬挂为缺口。 | [drafting-review.md](references/drafting-review.md) / [diagrams.md](references/diagrams.md) |
+| **[G4 👤]** | **LAWYER_SANCTIONED** (律师裁决门控 ★) | **人类决策硬门禁**。在起草定稿前，将实质法律风险、重大行动建议、推论前提及 **Type 3 核心交付图表（股权/交易/违约点）**呈交律师签署；**未经律师确认不得撤除草稿限制**。 | [expert-feedback.md](references/expert-feedback.md) |
+| **[G5]** | **CITATION_AUDITED** (三方审计门控 ★) | 独立三审计员（一致性审计、反面覆盖审计、文风与合规审计）全部签发 `PASS`，执行 Render Check 审计图文数据一致性，出具 `audit_report.json`。全票通过后方可解除草稿水印正式交付。 | [drafting-review.md](references/drafting-review.md) / [diagrams.md](references/diagrams.md) |
 
 混合任务可以组合流程，内部执行以同一任务记录交接；可用宿主若不支持独立子任务，则顺序执行，不声称运行了多Agent。
 

@@ -1,105 +1,74 @@
-<mxfile host="LexPrism" modified="2026-09-08T15:00:00.000Z" agent="LexPrism-Agent" version="24.0.0" type="device">
-  <diagram id="transaction-steps-01" name="并购交易步骤与交割流程">
+<mxfile host="LexPrism" modified="2026-09-11T08:41:47.526719" agent="LexPrism-Generator" version="24.0.0" type="device">
+  <diagram id="transaction-steps-01" name="交易结构图">
     <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        
-        <!-- 标题与基本信息 -->
-        <mxCell id="title" value="【LexPrism 交易架构参考】某医药制造业跨境股权收购项目步骤与交割流向图" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#1A365D;" vertex="1" parent="1">
+
+        <!-- 标题区 -->
+        <mxCell id="title" value="【LexPrism 交易架构报告】重大资产并购重组步骤与交割流向图" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#1A365D;" vertex="1" parent="1">
           <mxGeometry x="50" y="30" width="850" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="subtitle" value="交易结构：协议收购 (Share Purchase Agreement) | 资金交割方式：共管账户 (Escrow Account) 分期支付 | 适用法：PRC Law" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#718096;" vertex="1" parent="1">
+        <mxCell id="subtitle" value="基准日：2026年09月11日 | 标的项目：某智能医药跨境并购项目 | 交易结构：协议收购 (SPA) | 适用法：PRC Law" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#718096;" vertex="1" parent="1">
           <mxGeometry x="50" y="60" width="750" height="20" as="geometry" />
         </mxCell>
 
-        <!-- 阶段一：签署与先决条件 (CP Checklist) -->
-        <mxCell id="group_phase1" value="第一阶段：协议签署与交割先决条件 (CPs)" style="swimlane;whiteSpace=wrap;html=1;fillColor=#EDF2F7;strokeColor=#CBD5E0;fontColor=#2D3748;fontStyle=1;rounded=1;arcSize=6;" vertex="1" parent="1">
-          <mxGeometry x="50" y="110" width="240" height="420" as="geometry" />
+        <!-- 阶段 1：协议签署 -->
+        <mxCell id="lane1" value="&lt;b&gt;阶段一：签约与前置审批&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF8FF;strokeColor=#3182CE;fontColor=#1B365D;verticalAlign=top;spacingTop=6;align=center;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="50" y="100" width="240" height="420" as="geometry" />
         </mxCell>
-        <mxCell id="p1_step1" value="&lt;b&gt;1. 签署 SPA 主协议&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;买卖双方签署股权转让协议、反向担保函及竞业限制协议&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1B365D;strokeColor=#0B1E38;fontColor=#ffffff;fontSize=11;" vertex="1" parent="group_phase1">
-          <mxGeometry x="20" y="45" width="200" height="55" as="geometry" />
+        <mxCell id="s1" value="&lt;b&gt;步骤 1：签署《股份购买协议》&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;锁定对价 5.8 亿元，确立交割前置条件&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1B365D;strokeColor=#0B1E38;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="65" y="150" width="210" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="p1_step2" value="&lt;b&gt;2. 经营者集中反垄断申报&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;向国家市场监管总局提交申报并取得不予进一步审查决定书&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2B6CB0;strokeColor=#1A365D;fontColor=#ffffff;fontSize=11;" vertex="1" parent="group_phase1">
-          <mxGeometry x="20" y="135" width="200" height="55" as="geometry" />
+        <mxCell id="s2" value="&lt;b&gt;步骤 2：反垄断审查申报&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;取得市监总局不予进一步审查决定书&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2E7D32;strokeColor=#1B5E20;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="65" y="240" width="210" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="p1_step3" value="&lt;b&gt;3. 关键业务资质变更预审&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;药品GMP证书主体延续及核心研发团队锁定期协议签署&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2B6CB0;strokeColor=#1A365D;fontColor=#ffffff;fontSize=11;" vertex="1" parent="group_phase1">
-          <mxGeometry x="20" y="225" width="200" height="55" as="geometry" />
-        </mxCell>
-        <mxCell id="p1_step4" value="&lt;b&gt;4. 签署共管账户协议&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;在指定商业银行开立三方共管资金存管账户 (Escrow)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3182CE;strokeColor=#2B6CB0;fontColor=#ffffff;fontSize=11;" vertex="1" parent="group_phase1">
-          <mxGeometry x="20" y="315" width="200" height="55" as="geometry" />
+        <mxCell id="s3" value="&lt;b&gt;步骤 3：开立银行共管账户&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;买卖双方与托管行签署三方共管协议&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ED8936;strokeColor=#C05621;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="65" y="330" width="210" height="55" as="geometry" />
         </mxCell>
 
-        <!-- 阶段二：定金与先期交割 (Closing Part 1) -->
-        <mxCell id="group_phase2" value="第二阶段：资金入账与工商登记" style="swimlane;whiteSpace=wrap;html=1;fillColor=#EBF8FF;strokeColor=#BEE3F8;fontColor=#2B6CB0;fontStyle=1;rounded=1;arcSize=6;" vertex="1" parent="1">
-          <mxGeometry x="340" y="110" width="240" height="420" as="geometry" />
+        <!-- 阶段 2：交割先决条件成就 -->
+        <mxCell id="lane2" value="&lt;b&gt;阶段二：资金托管与交割&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0FFF4;strokeColor=#38A169;fontColor=#22543D;verticalAlign=top;spacingTop=6;align=center;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="320" y="100" width="240" height="420" as="geometry" />
         </mxCell>
-        <mxCell id="p2_step1" value="&lt;b&gt;5. 首期对价划入共管户 (50%)&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;买方划转对价款人民币 1.5 亿元至共管账户锁定&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D69E2E;strokeColor=#B7791F;fontColor=#ffffff;fontSize=11;" vertex="1" parent="group_phase2">
-          <mxGeometry x="20" y="45" width="200" height="55" as="geometry" />
+        <mxCell id="s4" value="&lt;b&gt;步骤 4：支付首期款至共管户&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;买方存入 50% 首期对价 (2.9 亿元)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2B6CB0;strokeColor=#1A365D;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="335" y="150" width="210" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="p2_step2" value="&lt;b&gt;6. 工商变更登记与交件&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;目标公司将 100% 股权登记至买方名下，换发新营业执照&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#319795;strokeColor=#285E61;fontColor=#ffffff;fontSize=11;" vertex="1" parent="group_phase2">
-          <mxGeometry x="20" y="150" width="200" height="55" as="geometry" />
+        <mxCell id="s5" value="&lt;b&gt;步骤 5：办理工商变更登记&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;完成标的股权过户及董事会重组备案&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2E7D32;strokeColor=#1B5E20;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="335" y="240" width="210" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="p2_step3" value="&lt;b&gt;7. 取得换照通知书&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;律师查验最新工商内档并出具登记完成核查意见书&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2E7D32;strokeColor=#1B5E20;fontColor=#ffffff;fontSize=11;" vertex="1" parent="group_phase2">
-          <mxGeometry x="20" y="255" width="200" height="55" as="geometry" />
-        </mxCell>
-
-        <!-- 阶段三：资产移交与对价解付 (Closing Part 2 & Escrow) -->
-        <mxCell id="group_phase3" value="第三阶段：资产移交与款项解付" style="swimlane;whiteSpace=wrap;html=1;fillColor=#F0FFF4;strokeColor=#C6F6D5;fontColor=#22543D;fontStyle=1;rounded=1;arcSize=6;" vertex="1" parent="1">
-          <mxGeometry x="630" y="110" width="240" height="420" as="geometry" />
-        </mxCell>
-        <mxCell id="p3_step1" value="&lt;b&gt;8. 实物与证照印章交接&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;公章、网银U盾、财务账册、不动产权证书现场清点交接&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#38A169;strokeColor=#276749;fontColor=#ffffff;fontSize=11;" vertex="1" parent="group_phase3">
-          <mxGeometry x="20" y="45" width="200" height="55" as="geometry" />
-        </mxCell>
-        <mxCell id="p3_step2" value="&lt;b&gt;9. 签署《交割确认书》&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;确认交割日 (Closing Date) 到达，发出共管账户解付指令&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2E7D32;strokeColor=#1B5E20;fontColor=#ffffff;fontSize=11;" vertex="1" parent="group_phase3">
-          <mxGeometry x="20" y="150" width="200" height="55" as="geometry" />
-        </mxCell>
-        <mxCell id="p3_step3" value="&lt;b&gt;10. 首期款解付至卖方账户&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;共管银行向卖方付汇人民币 1.5 亿元&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D69E2E;strokeColor=#B7791F;fontColor=#ffffff;fontSize=11;" vertex="1" parent="group_phase3">
-          <mxGeometry x="20" y="255" width="200" height="55" as="geometry" />
+        <mxCell id="s6" value="&lt;b&gt;步骤 6：共管账户首期解付&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;凭新营业执照解付 2.9 亿元至卖方&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ED8936;strokeColor=#C05621;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="335" y="330" width="210" height="55" as="geometry" />
         </mxCell>
 
-        <!-- 阶段四：后交割承诺与尾款担保 -->
-        <mxCell id="group_phase4" value="第四阶段：后交割承诺 (Post-Closing)" style="swimlane;whiteSpace=wrap;html=1;fillColor=#FEFCBF;strokeColor=#D69E2E;fontColor=#744210;fontStyle=1;rounded=1;arcSize=6;" vertex="1" parent="1">
-          <mxGeometry x="910" y="110" width="210" height="420" as="geometry" />
+        <!-- 阶段 3：资产交接与尾款清算 -->
+        <mxCell id="lane3" value="&lt;b&gt;阶段三：资产交接与质保闭环&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDF2F7;strokeColor=#CBD5E0;fontColor=#2D3748;verticalAlign=top;spacingTop=6;align=center;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="590" y="100" width="240" height="420" as="geometry" />
         </mxCell>
-        <mxCell id="p4_step1" value="&lt;b&gt;11. 尾款质保金锁定 (10%)&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;余款3,000万元于共管账户留存12个月，用于潜在陈述与保证索赔&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C05621;strokeColor=#7B341E;fontColor=#ffffff;fontSize=11;" vertex="1" parent="group_phase4">
-          <mxGeometry x="15" y="45" width="180" height="65" as="geometry" />
+        <mxCell id="s7" value="&lt;b&gt;步骤 7：标的公司资产与印章移交&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;双方签署《交割备忘录》完成控制权接管&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2B6CB0;strokeColor=#1A365D;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="605" y="150" width="210" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="p4_step2" value="&lt;b&gt;12. 税务申报与完税凭证&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;卖方于交割后30日内办理个人所得税扣缴并提供完税凭证&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4A5568;strokeColor=#2D3748;fontColor=#ffffff;fontSize=11;" vertex="1" parent="group_phase4">
-          <mxGeometry x="15" y="160" width="180" height="55" as="geometry" />
+        <mxCell id="s8" value="&lt;b&gt;步骤 8：支付第二期交割款 40%&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;交割后 15 个工作日内支付 2.32 亿元&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1B365D;strokeColor=#0B1E38;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="605" y="240" width="210" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="p4_step3" value="&lt;b&gt;13. 期满尾款最终清算&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;无违约索赔前提下解付全部剩余质保金，交易圆满闭环&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1B5E20;strokeColor=#0E3813;fontColor=#ffffff;fontSize=11;" vertex="1" parent="group_phase4">
-          <mxGeometry x="15" y="275" width="180" height="55" as="geometry" />
-        </mxCell>
-
-        <!-- 流程连接线 (从左到右跨阶段连接) -->
-        <mxCell id="e_1_2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#1A365D;strokeWidth=2;" edge="1" parent="1" source="p1_step1" target="p1_step2" />
-        <mxCell id="e_2_3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#1A365D;strokeWidth=2;" edge="1" parent="1" source="p1_step2" target="p1_step3" />
-        <mxCell id="e_3_4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#1A365D;strokeWidth=2;" edge="1" parent="1" source="p1_step3" target="p1_step4" />
-        
-        <mxCell id="e_4_5" value="先决条件成就" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#D69E2E;strokeWidth=2.5;fontStyle=1;fontSize=10;fontColor=#B7791F;" edge="1" parent="1" source="p1_step4" target="p2_step1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e_5_6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#319795;strokeWidth=2;" edge="1" parent="1" source="p2_step1" target="p2_step2" />
-        <mxCell id="e_6_7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2E7D32;strokeWidth=2;" edge="1" parent="1" source="p2_step2" target="p2_step3" />
-
-        <mxCell id="e_7_8" value="工商变更完毕" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2E7D32;strokeWidth=2.5;fontStyle=1;fontSize=10;fontColor=#2E7D32;" edge="1" parent="1" source="p2_step3" target="p3_step1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e_8_9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2E7D32;strokeWidth=2;" edge="1" parent="1" source="p3_step1" target="p3_step2" />
-        <mxCell id="e_9_10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#D69E2E;strokeWidth=2;" edge="1" parent="1" source="p3_step2" target="p3_step3" />
-
-        <mxCell id="e_10_11" value="交割日确认" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#C05621;strokeWidth=2.5;fontStyle=1;fontSize=10;fontColor=#C05621;" edge="1" parent="1" source="p3_step3" target="p4_step1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e_11_12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#4A5568;strokeWidth=2;" edge="1" parent="1" source="p4_step1" target="p4_step2" />
-        <mxCell id="e_12_13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#1B5E20;strokeWidth=2;" edge="1" parent="1" source="p4_step2" target="p4_step3" />
-
-        <!-- 底部重大法律风险防范说明 -->
-        <mxCell id="risk_memo" value="&lt;b&gt;【并购业务律师风险防控备忘】&lt;/b&gt;&lt;br&gt;◆ &lt;b&gt;交割日与所有权转移时点：&lt;/b&gt;依据《公司法》及司法解释，股权变动以公司股东名册变更为准；对外产生对抗效力以市场监管部门登记为准。本方案约定《交割确认书》签署日为风险转移时点。&lt;br&gt;◆ &lt;b&gt;重大不利影响 (MAC) 条款：&lt;/b&gt;在步骤 1 至步骤 7 期间，若目标公司发生超过 1,000 万元的主营业务损失或核心高管离职，买方有权单方无条件解除合同并退回共管资金。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF5F5;strokeColor=#FEB2B2;fontColor=#9B2C2C;align=left;spacingLeft=10;spacingRight=10;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="50" y="560" width="1070" height="75" as="geometry" />
+        <mxCell id="s9" value="&lt;b&gt;步骤 9：质保期满解付 10% 尾款&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;12 个月质保期届满后无争议解付 0.58 亿元&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2E7D32;strokeColor=#1B5E20;fontColor=#ffffff;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="605" y="330" width="210" height="55" as="geometry" />
         </mxCell>
 
+        <!-- 底部经办律师核查备忘卡片 -->
+        <mxCell id="memo_card" value="&lt;b&gt;【经办律师并购交易风险防控备忘】&lt;/b&gt;&lt;br&gt;1. 交割日与风险转移：双方于步骤 7 签署《交割备忘录》之日为实质交割日，自该日起标的公司运营损益与重大经营风险转由买方承担；&lt;br&gt;2. 共管资金划付防线：步骤 6 与步骤 8 的放款先决条件必须严格绑定工商登记证照原件及核心管理层交接清单，杜绝款项悬空；&lt;br&gt;3. 重大不利影响 (MAC) 保障：若在步骤 5 前标的公司发生重大行政处罚或核心知识产权失效，买方享有单方解除权并全额退款。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEFCBF;strokeColor=#D69E2E;fontColor=#744210;align=left;spacingLeft=12;spacingRight=12;fontSize=11;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="540" width="780" height="85" as="geometry" />
+        </mxCell>
+
+        <!-- 正交连接线 -->
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#1A365D;strokeWidth=2;" edge="1" parent="1" source="s1" target="s2" />
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#1A365D;strokeWidth=2;" edge="1" parent="1" source="s2" target="s3" />
+        <mxCell id="e3" value="审批通过" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2E7D32;strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="s3" target="s4" />
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#1A365D;strokeWidth=2;" edge="1" parent="1" source="s4" target="s5" />
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#1A365D;strokeWidth=2;" edge="1" parent="1" source="s5" target="s6" />
+        <mxCell id="e6" value="工商变更完成" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2E7D32;strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="s6" target="s7" />
+        <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#1A365D;strokeWidth=2;" edge="1" parent="1" source="s7" target="s8" />
+        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#1A365D;strokeWidth=2;" edge="1" parent="1" source="s8" target="s9" />
       </root>
     </mxGraphModel>
   </diagram>
