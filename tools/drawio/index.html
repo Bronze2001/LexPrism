@@ -329,9 +329,10 @@
           <span>📑 预制法律模板 ▾</span>
         </button>
         <div class="dropdown-content">
-          <a href="javascript:void(0)" onclick="loadTemplate('equity')">🏢 1. 股权结构图 (穿透与控制权)</a>
-          <a href="javascript:void(0)" onclick="loadTemplate('transaction')">🤝 2. 交易结构图 (步骤与交割流向)</a>
-          <a href="javascript:void(0)" onclick="newDiagram()">📄 3. 新建空白图表</a>
+          <a href="javascript:void(0)" onclick="loadTemplate('crossborder')">🏢 1. 典雅藏青 · 跨境出海与协议控制 (对标图 2)</a>
+          <a href="javascript:void(0)" onclick="loadTemplate('acquisition')">💎 2. 清爽冰蓝 · 并购受让与动态变动 (对标图 1)</a>
+          <a href="javascript:void(0)" onclick="loadTemplate('transaction')">🤝 3. 经典商务 · 交易步骤与交割流向</a>
+          <a href="javascript:void(0)" onclick="newDiagram()">📄 4. 新建空白图表</a>
         </div>
       </div>
 
@@ -442,8 +443,8 @@
           if (currentXmlData) {
             sendXmlToFrame(currentXmlData);
           } else {
-            // 默认加载示例 1
-            loadTemplate('equity');
+            // 默认加载示例 1 (典雅藏青跨境出海)
+            loadTemplate('crossborder');
           }
         }
 
@@ -667,68 +668,102 @@
       }
     });
 
-    // 3 套内置模板数据（内联以确保在 file:// 协议本地打开时免受浏览器同源 CORS 限制）
+    // 内置模板数据（内联以确保在 file:// 协议本地打开时免受浏览器同源 CORS 限制）
     const BUILTIN_TEMPLATES_DATA = {
-      equity: {
-        title: "股权穿透与控制权架构图.drawio",
-        xml: `<mxfile host="LexPrism" modified="2026-09-08T15:00:00.000Z" agent="LexPrism-Agent" version="24.0.0" type="device">
-  <diagram id="equity-structure-01" name="股权穿透与架构图">
+      crossborder: {
+        title: "跨境出海与协议控制股权结构图.drawio",
+        xml: `<mxfile host="LexPrism" modified="2026-09-16T12:00:00.000Z" agent="LexPrism-Agent" version="24.0.0" type="device">
+  <diagram id="cross-border-equity" name="跨境出海与协议控制股权图">
     <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="title" value="【LexPrism 法律架构参考】某智能科技集团股权穿透与控制权结构图" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#1A365D;" vertex="1" parent="1">
-          <mxGeometry x="60" y="40" width="700" height="30" as="geometry" />
+        <mxCell id="title" value="【LexPrism 跨境投资架构分析】中资制造集团出海印尼股权与协议控制结构图" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=17;fontStyle=1;fontColor=#163854;" vertex="1" parent="1">
+          <mxGeometry x="60" y="30" width="850" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="subtitle" value="基准日：2026年9月 | 绘制目的：上市前股权架构重组及穿透核查 | 密级：保密商业信息" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#718096;" vertex="1" parent="1">
-          <mxGeometry x="60" y="70" width="600" height="20" as="geometry" />
+        <mxCell id="subtitle" value="基准日：2026年9月16日 | 架构类型：境外直接投资 (ODI) &amp; 协议控制 (VIE) | 适用法：PRC Law &amp; Indonesian Law" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#718096;" vertex="1" parent="1">
+          <mxGeometry x="60" y="60" width="850" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="node_founder" value="&lt;b&gt;张某某 (创始人)&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;实际控制人 / 董事长兼CEO&lt;br&gt;中国籍 (未取得境外居留权)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1B365D;strokeColor=#0B1E38;fontColor=#ffffff;shadow=1;arcSize=12;" vertex="1" parent="1">
-          <mxGeometry x="180" y="130" width="200" height="60" as="geometry" />
+        <mxCell id="geo_line" value="" style="endArrow=none;html=1;rounded=0;dashed=1;dashPattern=2 3;strokeColor=#4A5568;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="315" as="sourcePoint" />
+            <mxPoint x="1080" y="315" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="node_cofounder" value="&lt;b&gt;李某 (联合创始人)&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;董事 / 首席技术官&lt;br&gt;中国籍&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2C5282;strokeColor=#1A365D;fontColor=#ffffff;shadow=1;arcSize=12;" vertex="1" parent="1">
-          <mxGeometry x="460" y="130" width="180" height="60" as="geometry" />
+        <mxCell id="geo_label_top" value="中国 China" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=bottom;fontSize=12;fontStyle=1;fontColor=#2D3748;" vertex="1" parent="1">
+          <mxGeometry x="45" y="278" width="100" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="node_esop_gp" value="&lt;b&gt;张某某 (普通合伙人 GP)&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;出资比例 1%&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2B6CB0;strokeColor=#1A365D;fontColor=#ffffff;arcSize=10;" vertex="1" parent="1">
-          <mxGeometry x="720" y="130" width="160" height="40" as="geometry" />
+        <mxCell id="geo_label_bottom" value="印尼 Indonesia" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;fontStyle=1;fontColor=#2D3748;" vertex="1" parent="1">
+          <mxGeometry x="45" y="325" width="110" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="node_esop_lp" value="&lt;b&gt;核心员工35人 (有限合伙人 LP)&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;合计出资 99%&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4A5568;strokeColor=#2D3748;fontColor=#ffffff;arcSize=10;" vertex="1" parent="1">
-          <mxGeometry x="900" y="130" width="160" height="40" as="geometry" />
+        <mxCell id="node_sh1" value="&lt;b&gt;华盛智能重工集团有限公司&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px; color: #CBD5E0;&quot;&gt;Huasheng Heavy Industry Group&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#163854;strokeColor=#0F293D;strokeWidth=1.5;fontColor=#ffffff;arcSize=18;" vertex="1" parent="1">
+          <mxGeometry x="200" y="110" width="220" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="node_holdco" value="&lt;b&gt;聚智投资管理 (深圳) 有限公司&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;(境内控股平台 SPV 1)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3182CE;strokeColor=#2B6CB0;fontColor=#ffffff;arcSize=10;" vertex="1" parent="1">
-          <mxGeometry x="280" y="240" width="220" height="50" as="geometry" />
+        <mxCell id="node_sh2" value="&lt;b&gt;盛泰共创产业合伙企业 (有限合伙)&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px; color: #CBD5E0;&quot;&gt;Shengtai Core Team LP&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#163854;strokeColor=#0F293D;strokeWidth=1.5;fontColor=#ffffff;arcSize=18;" vertex="1" parent="1">
+          <mxGeometry x="640" y="110" width="220" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="node_esop" value="&lt;b&gt;共创致远投资合伙企业 (有限合伙)&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;员工持股平台 (ESOP)&lt;br&gt;张某某担任GP实际行使表决权&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ED8936;strokeColor=#C05621;fontColor=#ffffff;shadow=1;arcSize=10;" vertex="1" parent="1">
-          <mxGeometry x="760" y="235" width="240" height="60" as="geometry" />
+        <mxCell id="node_china_holdco" value="&lt;b&gt;华盛海外投资管理 (深圳) 有限公司&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px; color: #CBD5E0;&quot;&gt;Huasheng Overseas Investment (China Holdco)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#163854;strokeColor=#0F293D;strokeWidth=1.5;fontColor=#ffffff;arcSize=16;" vertex="1" parent="1">
+          <mxGeometry x="380" y="225" width="300" height="58" as="geometry" />
         </mxCell>
-        <mxCell id="node_target" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;华创未来智能科技股份有限公司&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;(拟上市发行主体 / 注册资本：人民币 8,000 万元)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1B365D;strokeColor=#0B1E38;fontColor=#ffffff;fontStyle=0;shadow=1;arcSize=8;" vertex="1" parent="1">
-          <mxGeometry x="380" y="380" width="380" height="70" as="geometry" />
+        <mxCell id="node_indo_sub1" value="&lt;b&gt;PT HUASHENG LEASING INDO&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;设备租赁公司 / Equipment Leasing Co.&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#163854;strokeColor=#0F293D;strokeWidth=1.5;fontColor=#ffffff;arcSize=16;" vertex="1" parent="1">
+          <mxGeometry x="100" y="440" width="280" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="node_investor" value="&lt;b&gt;领航新动能一期基金 (有限合伙)&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;A轮领投机构 (已完成备案登记)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#718096;strokeColor=#4A5568;fontColor=#ffffff;arcSize=10;" vertex="1" parent="1">
-          <mxGeometry x="80" y="385" width="210" height="60" as="geometry" />
+        <mxCell id="node_indo_sub2" value="&lt;b&gt;PT HUASHENG REKAYASA KONSTRUKSI&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;工程公司 / Construction Co.&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#163854;strokeColor=#0F293D;strokeWidth=1.5;fontColor=#ffffff;arcSize=16;" vertex="1" parent="1">
+          <mxGeometry x="620" y="440" width="280" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="node_sub_a" value="&lt;b&gt;华创云联 (北京) 软件技术有限公司&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px; color: #4A5568;&quot;&gt;核心研发中心 / 高新认证企业&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDF2F7;strokeColor=#CBD5E0;fontColor=#2D3748;arcSize=10;" vertex="1" parent="1">
-          <mxGeometry x="120" y="520" width="230" height="55" as="geometry" />
+        <mxCell id="node_local_citizen" value="&lt;b&gt;当地自然人&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px; color: #E2E8F0;&quot;&gt;Local Citizen (Indonesian)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1D5174;strokeColor=#153E5D;strokeWidth=1.5;fontColor=#ffffff;arcSize=18;" vertex="1" parent="1">
+          <mxGeometry x="840" y="340" width="160" height="48" as="geometry" />
         </mxCell>
-        <mxCell id="node_sub_b" value="&lt;b&gt;华创微芯 (深圳) 半导体制造有限公司&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px; color: #4A5568;&quot;&gt;芯片制造基地 / 重点资产主体&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDF2F7;strokeColor=#CBD5E0;fontColor=#2D3748;arcSize=10;" vertex="1" parent="1">
-          <mxGeometry x="455" y="520" width="230" height="55" as="geometry" />
+        <mxCell id="memo_card" value="&lt;b&gt;【经办律师核查备忘与境外合规提示】&lt;/b&gt;&lt;br&gt;1. 境内审批与穿透：华盛海外(深圳)已取得发改委 (NDRC) 及商务主管部门 (MOFCOM) 境外直接投资 (ODI) 备案凭证及外汇登记；直接股东持股 88.00% + 12.00% = 100.00% 严格闭环；&lt;br&gt;2. 印尼外资准入合规：依据印尼《正面投资清单》，设备租赁业务允许外商独资 (100% 外资控股)；工程承包资质业务存在外资持股比例上限，故通过当地自然人持股配合全套独家管理咨询、表决权委托及股权质押协议实现实质控制 (Contractual Control)；&lt;br&gt;3. 风险防范要点：已就当地自然人股权质押办理印尼官方登记，确保控制权穿透与跨境司法执行力。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEFCBF;strokeColor=#D69E2E;fontColor=#744210;align=left;spacingLeft=12;spacingRight=12;fontSize=11;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="555" width="980" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="node_sub_c" value="&lt;b&gt;华创智造 (苏州) 自动化设备有限公司&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px; color: #4A5568;&quot;&gt;生产与装配基地&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDF2F7;strokeColor=#CBD5E0;fontColor=#2D3748;arcSize=10;" vertex="1" parent="1">
-          <mxGeometry x="780" y="520" width="230" height="55" as="geometry" />
+        <mxCell id="edge_sh1_holdco" value="88%" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#204868;strokeWidth=2;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="node_sh1" target="node_china_holdco"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="edge_sh2_holdco" value="12%" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#204868;strokeWidth=2;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="node_sh2" target="node_china_holdco"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="edge_holdco_lease" value="100%" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#204868;strokeWidth=2;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="node_china_holdco" target="node_indo_sub1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="edge_holdco_construct" value="控制&lt;br&gt;Control" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#204868;strokeWidth=2;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="node_china_holdco" target="node_indo_sub2"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="edge_local_citizen" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#204868;strokeWidth=2;entryX=0.8;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="node_local_citizen" target="node_indo_sub2"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>`
+      },
+      acquisition: {
+        title: "并购重组协议受让与动态变动图.drawio",
+        xml: `<mxfile host="LexPrism" modified="2026-09-16T12:00:00.000Z" agent="LexPrism-Agent" version="24.0.0" type="device">
+  <diagram id="m-and-a-equity-transition" name="并购受让与动态股权变动图">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="【LexPrism 并购重组分析】某智能制造股份有限公司协议收购30%股权变动结构图" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=17;fontStyle=1;fontColor=#163854;" vertex="1" parent="1">
+          <mxGeometry x="60" y="30" width="850" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="legal_notice" value="&lt;b&gt;【经办律师核查要点】&lt;/b&gt;&lt;br&gt;1. 张某某通过持有SPV 80%股权及担任员工持股平台GP，合计直接与间接控制发行人 &lt;b&gt;68.5%&lt;/b&gt; 表决权，控制权清晰稳定。&lt;br&gt;2. 员工持股平台穿透后股东人数共计36人，未超过《证券法》规定的200人上限。&lt;br&gt;3. 外部投资人对赌协议中的一票否决权条款已于申报前完成彻底清理，无恢复效力约定。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEFCBF;strokeColor=#D69E2E;fontColor=#744210;align=left;spacingLeft=10;spacingRight=10;fontSize=11;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="630" width="890" height="80" as="geometry" />
+        <mxCell id="subtitle" value="基准日：2026年9月16日 | 交易结构：协议收购 (Share Purchase Agreement) | 适用法：PRC Law" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#718096;" vertex="1" parent="1">
+          <mxGeometry x="60" y="60" width="750" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="edge_founder_spv" value="80.00%" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeColor=#2B6CB0;strokeWidth=2;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="node_founder" target="node_holdco"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="edge_cofounder_spv" value="20.00%" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;strokeColor=#2B6CB0;strokeWidth=2;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="node_cofounder" target="node_holdco"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="edge_gp_esop" value="GP (1%)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.35;entryY=0;entryDx=0;entryDy=0;strokeColor=#DD6B20;strokeWidth=1.5;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="node_esop_gp" target="node_esop"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="edge_lp_esop" value="LP (99%)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;strokeColor=#718096;strokeWidth=1.5;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="node_esop_lp" target="node_esop"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="edge_spv_target" value="持股 55.00%" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeColor=#1B365D;strokeWidth=2.5;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="node_holdco" target="node_target"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="edge_esop_target" value="持股 15.00%" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.85;entryY=0;entryDx=0;entryDy=0;strokeColor=#DD6B20;strokeWidth=2;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="node_esop" target="node_target"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="edge_investor_target" value="持股 30.00%" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#718096;strokeWidth=2;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="node_investor" target="node_target"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="edge_target_sub_a" value="100% 全资" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#4A5568;strokeWidth=1.5;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="node_target" target="node_sub_a"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="edge_target_sub_b" value="100% 全资" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#4A5568;strokeWidth=1.5;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="node_target" target="node_sub_b"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="edge_target_sub_c" value="70% 控股 (自然人张三持有余下30%)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#4A5568;strokeWidth=1.5;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="node_target" target="node_sub_c"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="sh_acquirer" value="&lt;b&gt;某战略收购方企业&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Strategic Acquirer&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DDF1FC;strokeColor=#B3DDF2;strokeWidth=1.2;fontColor=#163854;arcSize=20;" vertex="1" parent="1">
+          <mxGeometry x="80" y="130" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sh_seller" value="&lt;b&gt;原控股股东 (创始人团队)&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Founding Shareholder&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DDF1FC;strokeColor=#B3DDF2;strokeWidth=1.2;fontColor=#163854;arcSize=20;" vertex="1" parent="1">
+          <mxGeometry x="450" y="130" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sh_others" value="&lt;b&gt;其他现有股东&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Other Shareholders&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DDF1FC;strokeColor=#B3DDF2;strokeWidth=1.2;fontColor=#163854;arcSize=20;" vertex="1" parent="1">
+          <mxGeometry x="780" y="130" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_acquisition" value="Acquire 30% of&lt;br&gt;the shares" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=4 4;strokeColor=#204868;strokeWidth=1.5;fontSize=11;fontStyle=1;fontColor=#163854;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="sh_acquirer" target="sh_seller"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="bus_joint" value="" style="shape=ellipse;fillColor=#2D7A9E;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="556" y="280" width="8" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="node_target" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;目标标的智能科技股份有限公司&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Target High-Tech Co., Ltd. (标的公司 / 注册资本: 10,000 万元)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0284C7;strokeColor=#0369A1;strokeWidth=1.5;fontColor=#ffffff;arcSize=16;" vertex="1" parent="1">
+          <mxGeometry x="360" y="380" width="400" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="memo_card" value="&lt;b&gt;【经办律师并购重组核查备忘】&lt;/b&gt;&lt;br&gt;1. 变动数据闭环校验：战略收购方受让 30.00% 标的股权，原控股股东持股由 90.00% 降为 60.00%，其他股东持股 10.00% 保持不变；重组交割后各股东持股之和 30% + 60% + 10% = 100.00%，数学闭环自洽；&lt;br&gt;2. 实际控制权状态：交割后原控股股东依然持有 60.00% 绝对控股权，上市公司控制权未发生根本性变更；&lt;br&gt;3. 交割先决条件追踪：本次协议受让已完成经营者集中反垄断申报审查豁免，尚待办理中登公司股份过户登记。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEFCBF;strokeColor=#D69E2E;fontColor=#744210;align=left;spacingLeft=12;spacingRight=12;fontSize=11;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="520" width="940" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_acquirer_bus" value="0 → 30%" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2D7A9E;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#163854;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="sh_acquirer" target="bus_joint"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="190" y="284" /></Array></mxGeometry></mxCell>
+        <mxCell id="edge_seller_bus" value="90% → 60%" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2D7A9E;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#163854;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="sh_seller" target="bus_joint"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="560" y="220" /></Array></mxGeometry></mxCell>
+        <mxCell id="edge_others_bus" value="10%" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2D7A9E;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#163854;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="sh_others" target="bus_joint"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="890" y="284" /></Array></mxGeometry></mxCell>
+        <mxCell id="edge_bus_target" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2D7A9E;strokeWidth=2.5;" edge="1" parent="1" source="bus_joint" target="node_target"><mxGeometry relative="1" as="geometry" /></mxCell>
       </root>
     </mxGraphModel>
   </diagram>

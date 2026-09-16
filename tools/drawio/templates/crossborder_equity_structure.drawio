@@ -1,0 +1,72 @@
+<mxfile host="LexPrism" modified="2026-09-16T21:15:57.759491" agent="LexPrism-Generator" version="24.0.0" type="device">
+  <diagram id="cross-border-equity-01" name="跨境出海与协议控制股权图">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- 1. 顶部标题与法律基准日声明 -->
+        <mxCell id="title" value="【LexPrism 跨境投资架构分析】中资企业出海印尼股权与协议控制结构图" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=17;fontStyle=1;fontColor=#163854;" vertex="1" parent="1">
+          <mxGeometry x="60" y="30" width="850" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" value="基准日：2026年09月16日 | 架构类型：境外直接投资 (ODI) &amp; 协议控制 (VIE) | 适用法：PRC Law &amp; Indonesian Law" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#718096;" vertex="1" parent="1">
+          <mxGeometry x="60" y="60" width="850" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- 2. 跨境法域分隔线 (横贯画布) -->
+        <mxCell id="geo_line" value="" style="endArrow=none;html=1;rounded=0;dashed=1;dashPattern=2 3;strokeColor=#4A5568;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="315" as="sourcePoint" />
+            <mxPoint x="1080" y="315" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- 法域标签 (左侧固定锚点) -->
+        <mxCell id="geo_label_top" value="中国 China" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=bottom;fontSize=12;fontStyle=1;fontColor=#2D3748;" vertex="1" parent="1">
+          <mxGeometry x="45" y="278" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="geo_label_bottom" value="印尼 Indonesia" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;fontStyle=1;fontColor=#2D3748;" vertex="1" parent="1">
+          <mxGeometry x="45" y="325" width="110" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- 3. 境内股东层级 -->
+        <mxCell id="node_sh1" value="&lt;b&gt;华盛智能重工集团有限公司&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px; color: #CBD5E0;&quot;&gt;Huasheng Heavy Industry Group&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#163854;strokeColor=#0F293D;strokeWidth=1.5;fontColor=#ffffff;arcSize=18;" vertex="1" parent="1">
+          <mxGeometry x="200" y="110" width="220" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="node_sh2" value="&lt;b&gt;盛泰共创产业合伙企业 (有限合伙)&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px; color: #CBD5E0;&quot;&gt;Shengtai Core Team LP&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#163854;strokeColor=#0F293D;strokeWidth=1.5;fontColor=#ffffff;arcSize=18;" vertex="1" parent="1">
+          <mxGeometry x="640" y="110" width="220" height="55" as="geometry" />
+        </mxCell>
+
+        <!-- 4. 境内控股公司 (Holdco) -->
+        <mxCell id="node_china_holdco" value="&lt;b&gt;华盛海外投资管理 (深圳) 有限公司&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px; color: #CBD5E0;&quot;&gt;China Holding Co. (注册资本: 5,000 万元)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#163854;strokeColor=#0F293D;strokeWidth=1.5;fontColor=#ffffff;arcSize=16;" vertex="1" parent="1">
+          <mxGeometry x="380" y="225" width="300" height="58" as="geometry" />
+        </mxCell>
+
+        <!-- 5. 境外运营子公司层级 -->
+        <mxCell id="node_indo_sub1" value="&lt;b&gt;PT HUASHENG LEASING INDO&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;设备租赁公司 / Equipment Leasing Co.&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#163854;strokeColor=#0F293D;strokeWidth=1.5;fontColor=#ffffff;arcSize=16;" vertex="1" parent="1">
+          <mxGeometry x="100" y="440" width="280" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="node_indo_sub2" value="&lt;b&gt;PT HUASHENG REKAYASA KONSTRUKSI&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;工程公司 / Construction Co.&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#163854;strokeColor=#0F293D;strokeWidth=1.5;fontColor=#ffffff;arcSize=16;" vertex="1" parent="1">
+          <mxGeometry x="620" y="440" width="280" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 印尼当地自然人合作方 -->
+        <mxCell id="node_local_citizen" value="&lt;b&gt;当地自然人&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px; color: #E2E8F0;&quot;&gt;Local Citizen (Indonesian)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1D5174;strokeColor=#153E5D;strokeWidth=1.5;fontColor=#ffffff;arcSize=18;" vertex="1" parent="1">
+          <mxGeometry x="840" y="340" width="160" height="48" as="geometry" />
+        </mxCell>
+
+        <!-- 6. 经办律师核查备忘卡片 -->
+        <mxCell id="memo_card" value="&lt;b&gt;【经办律师核查备忘与境外合规提示】&lt;/b&gt;&lt;br&gt;1. 境内审批与穿透：境内控股公司已取得发改委 (NDRC) 及商务主管部门 (MOFCOM) 境外直接投资 (ODI) 备案凭证及外汇登记证；直接股东合计持股 88.00% + 12.00% = 100.00% 严格闭环；&lt;br&gt;2. 外资准入合规架构：依据当地《投资负面清单》，设备租赁业务允许 100% 外商独资；工程承包资质业务受限于当地股权比例，故通过当地自然人持股配合全套独家管理咨询、表决权委托及股权质押协议实现实质控制 (Contractual Control)；&lt;br&gt;3. 司法执行防线：已就当地自然人股权办理官方质押登记，确保控制权穿透与跨境执行效力。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEFCBF;strokeColor=#D69E2E;fontColor=#744210;align=left;spacingLeft=12;spacingRight=12;fontSize=11;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="555" width="980" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- 7. 正交连线 -->
+        <mxCell id="edge_sh1_holdco" value="88%" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#204868;strokeWidth=2;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="node_sh1" target="node_china_holdco" />
+        <mxCell id="edge_sh2_holdco" value="12%" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#204868;strokeWidth=2;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="node_sh2" target="node_china_holdco" />
+        <mxCell id="edge_holdco_lease" value="100%" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#204868;strokeWidth=2;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="node_china_holdco" target="node_indo_sub1" />
+        <mxCell id="edge_holdco_construct" value="控制&lt;br&gt;Control" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#204868;strokeWidth=2;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="node_china_holdco" target="node_indo_sub2" />
+        <mxCell id="edge_local_citizen" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#204868;strokeWidth=2;entryX=0.8;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="node_local_citizen" target="node_indo_sub2" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

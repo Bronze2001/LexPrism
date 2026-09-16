@@ -1,0 +1,70 @@
+<mxfile host="LexPrism" modified="2026-09-16T21:16:07.789823" agent="LexPrism-Generator" version="24.0.0" type="device">
+  <diagram id="m-and-a-equity-transition-01" name="并购受让与动态股权变动图">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- 1. 顶部主标题与基准日声明 -->
+        <mxCell id="title" value="【LexPrism 并购重组分析】协议收购30%股权变动与交割后结构图" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=17;fontStyle=1;fontColor=#163854;" vertex="1" parent="1">
+          <mxGeometry x="60" y="30" width="850" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" value="基准日：2026年09月16日 | 交易结构：协议收购 (Share Purchase Agreement) | 适用法：PRC Law" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#718096;" vertex="1" parent="1">
+          <mxGeometry x="60" y="60" width="750" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- 2. 顶层股东胶囊卡片 (清透冰蓝风格) -->
+        <mxCell id="sh_acquirer" value="&lt;b&gt;某战略收购方企业&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Strategic Acquirer&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DDF1FC;strokeColor=#B3DDF2;strokeWidth=1.2;fontColor=#163854;arcSize=20;" vertex="1" parent="1">
+          <mxGeometry x="80" y="130" width="220" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="sh_seller" value="&lt;b&gt;原控股股东 (创始人团队)&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Founding Shareholder&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DDF1FC;strokeColor=#B3DDF2;strokeWidth=1.2;fontColor=#163854;arcSize=20;" vertex="1" parent="1">
+          <mxGeometry x="450" y="130" width="220" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="sh_others" value="&lt;b&gt;其他现有股东&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Other Shareholders&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DDF1FC;strokeColor=#B3DDF2;strokeWidth=1.2;fontColor=#163854;arcSize=20;" vertex="1" parent="1">
+          <mxGeometry x="780" y="130" width="220" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 3. 横向受让动向虚线 -->
+        <mxCell id="edge_acquisition" value="Acquire 30% of&lt;br&gt;the shares" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=4 4;strokeColor=#204868;strokeWidth=1.5;fontSize=11;fontStyle=1;fontColor=#163854;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="sh_acquirer" target="sh_seller" />
+
+        <!-- 4. 汇流总线主连接节点 -->
+        <mxCell id="bus_joint" value="" style="shape=ellipse;fillColor=#2D7A9E;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="556" y="280" width="8" height="8" as="geometry" />
+        </mxCell>
+
+        <!-- 5. 核心标的公司 (高明度海洋蔚蓝居中大卡片) -->
+        <mxCell id="node_target" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;目标标的智能科技股份有限公司&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;(拟上市公司 / 协议受让标的主体 / 注册资本: 10,000 万元)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0284C7;strokeColor=#0369A1;strokeWidth=1.5;fontColor=#ffffff;arcSize=16;" vertex="1" parent="1">
+          <mxGeometry x="360" y="380" width="400" height="75" as="geometry" />
+        </mxCell>
+
+        <!-- 6. 经办律师核查备忘卡片 -->
+        <mxCell id="memo_card" value="&lt;b&gt;【经办律师并购重组核查备忘】&lt;/b&gt;&lt;br&gt;1. 变动数据闭环校验：战略收购方受让 30.00% 标的股权，原控股股东持股由 90.00% 降为 60.00%，其他股东持股 10.00% 保持不变；重组交割后各股东持股之和 30% + 60% + 10% = 100.00%，数学闭环自洽；&lt;br&gt;2. 实际控制权状态：交割后原控股股东依然持有 60.00% 绝对控股权，上市公司控制权未发生根本性变更；&lt;br&gt;3. 交割先决条件追踪：本次协议受让已完成经营者集中反垄断申报审查豁免，尚待办理中登公司股份过户登记。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEFCBF;strokeColor=#D69E2E;fontColor=#744210;align=left;spacingLeft=12;spacingRight=12;fontSize=11;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="520" width="940" height="85" as="geometry" />
+        </mxCell>
+
+        <!-- 7. 正交连线与动态比例标注 (0->30%, 90%->60%, 10%) -->
+        <mxCell id="edge_acquirer_bus" value="0 → 30%" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2D7A9E;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#163854;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="sh_acquirer" target="bus_joint">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="284" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="edge_seller_bus" value="90% → 60%" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2D7A9E;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#163854;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="sh_seller" target="bus_joint" />
+
+        <mxCell id="edge_others_bus" value="10%" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2D7A9E;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#163854;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="sh_others" target="bus_joint">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="890" y="284" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="edge_bus_target" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2D7A9E;strokeWidth=2.5;" edge="1" parent="1" source="bus_joint" target="node_target" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
