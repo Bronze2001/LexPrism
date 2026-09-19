@@ -1,0 +1,708 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" modified="2026-09-17T00:00:00Z" agent="LexPrism design proposal" version="24.7.17" type="device">
+  <diagram id="page-0" name="01-两窗口全流程">
+    <mxGraphModel dx="1920" dy="2560" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1920" pageHeight="2560">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="LexPrism｜两个窗口，完整文件闭环" style="text;html=0;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Microsoft YaHei;fontSize=40;fontColor=#163854;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="72" y="42" width="1776" height="60" />
+        </mxCell>
+        <mxCell id="sub" value="前台由律师手动触发；交接与后台只在当前对话执行时工作。箭头表示文件和状态流转。" style="text;html=0;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Microsoft YaHei;fontSize=22;fontColor=#243B53;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="72" y="108" width="1776" height="72" />
+        </mxCell>
+        <mxCell id="footer" value="方案评审 v0.1 · 2026-09-17 · 人工触发对话，后台文件自动管理 · 尚未部署" style="text;html=0;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Microsoft YaHei;fontSize=20;fontColor=#243B53;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="72" y="2508" width="1776" height="35" />
+        </mxCell>
+        <mxCell id="label-0" value="01  需求分流" style="text;html=0;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Microsoft YaHei;fontSize=22;fontColor=#243B53;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="72" y="292" width="1818" height="75" />
+        </mxCell>
+        <mxCell id="label-1" value="02  绑定事项" style="text;html=0;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Microsoft YaHei;fontSize=22;fontColor=#243B53;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="72" y="492" width="1818" height="75" />
+        </mxCell>
+        <mxCell id="label-2" value="03  生成送审" style="text;html=0;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Microsoft YaHei;fontSize=22;fontColor=#243B53;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="72" y="692" width="1818" height="75" />
+        </mxCell>
+        <mxCell id="label-3" value="04  人工切换" style="text;html=0;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Microsoft YaHei;fontSize=22;fontColor=#243B53;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="72" y="892" width="1818" height="75" />
+        </mxCell>
+        <mxCell id="label-4" value="05  审阅结论" style="text;html=0;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Microsoft YaHei;fontSize=22;fontColor=#243B53;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="72" y="1092" width="1818" height="75" />
+        </mxCell>
+        <mxCell id="label-5" value="06  修订分支" style="text;html=0;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Microsoft YaHei;fontSize=22;fontColor=#243B53;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="72" y="1292" width="1818" height="75" />
+        </mxCell>
+        <mxCell id="label-6" value="07  通过后交付" style="text;html=0;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Microsoft YaHei;fontSize=22;fontColor=#243B53;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="72" y="1492" width="1818" height="75" />
+        </mxCell>
+        <mxCell id="label-7" value="08  律师确认" style="text;html=0;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Microsoft YaHei;fontSize=22;fontColor=#243B53;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="72" y="1692" width="1818" height="75" />
+        </mxCell>
+        <mxCell id="label-8" value="09  正式发布" style="text;html=0;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Microsoft YaHei;fontSize=22;fontColor=#243B53;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="72" y="1892" width="1818" height="75" />
+        </mxCell>
+        <mxCell id="label-9" value="10  后续修改" style="text;html=0;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Microsoft YaHei;fontSize=22;fontColor=#243B53;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="72" y="2092" width="1818" height="75" />
+        </mxCell>
+        <mxCell id="label-10" value="通过 → 第 07 步&#10;需修改／待补件 → 第 06 步" style="text;html=0;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Microsoft YaHei;fontSize=18;fontColor=#243B53;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1460" y="1259" width="430" height="75" />
+        </mxCell>
+        <mxCell id="label-11" value="修订送审后，由律师再次触发第 04 步" style="text;html=0;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Microsoft YaHei;fontSize=18;fontColor=#243B53;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="116" y="1461" width="1774" height="75" />
+        </mxCell>
+        <mxCell id="label-12" value="成功才称正式交付；发布异常见第 2 页" style="text;html=0;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Microsoft YaHei;fontSize=20;fontColor=#243B53;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1010" y="2075" width="880" height="75" />
+        </mxCell>
+        <mxCell id="label-13" value="主路径：生成送审 → 人工启动独立审阅 → 通过 → 人工回生成准备交付 → 明确确认 → 本地发布" style="text;html=0;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Microsoft YaHei;fontSize=24;fontColor=#243B53;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="2393" width="1790" height="75" />
+        </mxCell>
+        <mxCell id="head0" value="律师 · 需求与确认" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#DDF1FC;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="200" width="370" height="76" />
+        </mxCell>
+        <mxCell id="head1" value="前台 · 生成／审阅窗口" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#DDF1FC;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="550" y="200" width="370" height="76" />
+        </mxCell>
+        <mxCell id="head2" value="中间交接 · 事项与动作" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#DDF1FC;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1000" y="200" width="370" height="76" />
+        </mxCell>
+        <mxCell id="head3" value="后台 · 本地文件管理" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#DDF1FC;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1450" y="200" width="370" height="76" />
+        </mxCell>
+        <mxCell id="r0c0" value="描述问题、给出材料" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="335" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r0c1" value="生成：识别目的与文种" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="550" y="335" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r0c2" value="短答直接完成&#10;成篇任务进入管理流程" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1000" y="335" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r0c3" value="短答不建档&#10;成篇任务定位已有事项" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1450" y="335" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r1c0" value="命名／选择同一项目&#10;只在有歧义时询问" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="535" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r1c1" value="生成／审阅：读取入口&#10;沿用各自的事项绑定" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="550" y="535" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r1c2" value="核对项目及当前版本&#10;无法读取不等于不存在" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1000" y="535" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r1c3" value="查授权范围内元数据&#10;读 WORK、状态与历史" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1450" y="535" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r2c0" value="生成窗口&#10;“形成初稿并提交审阅”" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="735" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r2c1" value="研究 → 起草 → 自检&#10;固定候选 Word 与核验稿" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="550" y="735" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r2c2" value="独占副本 → 提交送审&#10;保存任务、证据和回应" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1000" y="735" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r2c3" value="封存不可覆盖的版本&#10;状态：待审阅" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1450" y="735" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r3c0" value="切到审阅窗口&#10;“审阅当前送审版本”" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="935" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r3c1" value="独立读取完整稿与依据&#10;检查证据、覆盖、文风、一致性" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="550" y="935" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r3c2" value="固定所审事项和版本&#10;生成侧自检不能代替" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1000" y="935" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r3c3" value="建立本轮审阅目录&#10;不改已送审正文" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1450" y="935" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r4c0" value="阅读结果及下一步&#10;不用复制意见或找文件" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="1135" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r4c1" value="审阅：写完整意见&#10;通过／需修改／待补件" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="550" y="1135" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r4c2" value="封存意见、汇总有效结果&#10;旧版通过不批准新稿" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1000" y="1135" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r4c3" value="保留原始完整审阅&#10;状态等待律师下次触发" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1450" y="1135" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r5c0" value="需修改：回生成窗口修订&#10;待补件：提供关键材料" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FEEBC8;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="1335" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r5c1" value="生成：读真实完整意见&#10;修订全稿及相关成果" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="550" y="1335" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r5c2" value="回应每项意见、另存新版本&#10;律师再次触发独立复审" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1000" y="1335" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r5c3" value="旧版本与旧意见保留&#10;新版本重新待审" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1450" y="1335" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r6c0" value="通过后回生成窗口&#10;“准备正式交付”" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="1535" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r6c1" value="链接已审候选 Word&#10;给出项目及文件名建议" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="550" y="1535" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r6c2" value="发布预检：版本与审阅&#10;汇总尚待确认的名称、范围" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1000" y="1535" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r6c3" value="确认最新版本与所选成果&#10;预检通过仍未发布" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1450" y="1535" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r7c0" value="确认这份文件、本版和范围&#10;确认或修改项目／文件名称" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FEEBC8;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="1735" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r7c1" value="生成：理解明确确认&#10;不从沉默或打开文件推定" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="550" y="1735" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r7c2" value="记录原话、时间及来源&#10;绑定文件、版本、名称、路径" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1000" y="1735" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r7c3" value="保存本次确认记录&#10;内容变化则原确认不适用" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1450" y="1735" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r8c0" value="收到正式文件链接&#10;无需移动、重命名或归档" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#E8F5E9;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="1935" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r8c1" value="生成：根据实际结果回复&#10;本地交付不等于对外发送" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#E8F5E9;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="550" y="1935" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r8c2" value="发布时重新核验所有门槛&#10;只复制已审、已确认文件" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#E8F5E9;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1000" y="1935" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r8c3" value="output／项目名／文件.docx&#10;失败按发布恢复流程处理" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#E8F5E9;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1450" y="1935" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r9c0" value="生成窗口&#10;“这份已交付文书需要修改”" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="2135" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r9c1" value="生成：从旧内容建新稿&#10;独立复审、重新确认" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="550" y="2135" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r9c2" value="新工作副本 → 新版本&#10;重新走送审与交付流程" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1000" y="2135" width="370" height="116" />
+        </mxCell>
+        <mxCell id="r9c3" value="新正式文件另存&#10;旧交付、版本和意见保留" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1450" y="2135" width="370" height="116" />
+        </mxCell>
+        <mxCell id="edge-0" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="r0c0" target="r0c1">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-1" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="r0c1" target="r0c2">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-2" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="r0c2" target="r0c3">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-3" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="r1c0" target="r1c1">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-4" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="r1c1" target="r1c2">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-5" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="r1c2" target="r1c3">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-6" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="r2c0" target="r2c1">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-7" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="r2c1" target="r2c2">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-8" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="r2c2" target="r2c3">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-9" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="r3c0" target="r3c1">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-10" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="r3c1" target="r3c2">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-11" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="r3c2" target="r3c3">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-12" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.0;exitY=0.5;entryX=1.0;entryY=0.5;" edge="1" parent="1" source="r4c1" target="r4c0">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-13" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.0;exitY=0.5;entryX=1.0;entryY=0.5;" edge="1" parent="1" source="r4c2" target="r4c1">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-14" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.0;exitY=0.5;entryX=1.0;entryY=0.5;" edge="1" parent="1" source="r4c3" target="r4c2">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-15" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="r5c0" target="r5c1">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-16" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="r5c1" target="r5c2">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-17" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="r5c2" target="r5c3">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-18" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="r6c0" target="r6c1">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-19" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="r6c1" target="r6c2">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-20" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="r6c2" target="r6c3">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-21" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="r7c0" target="r7c1">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-22" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="r7c1" target="r7c2">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-23" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="r7c2" target="r7c3">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-24" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.0;exitY=0.5;entryX=1.0;entryY=0.5;" edge="1" parent="1" source="r8c1" target="r8c0">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-25" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.0;exitY=0.5;entryX=1.0;entryY=0.5;" edge="1" parent="1" source="r8c2" target="r8c1">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-26" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.0;exitY=0.5;entryX=1.0;entryY=0.5;" edge="1" parent="1" source="r8c3" target="r8c2">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-27" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="r9c0" target="r9c1">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-28" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="r9c1" target="r9c2">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-29" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="r9c2" target="r9c3">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-30" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;" edge="1" parent="1" source="r0c3" target="r1c3">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-31" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;" edge="1" parent="1" source="r1c3" target="r2c3">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-32" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;" edge="1" parent="1" source="r2c3" target="r3c3">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-33" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;" edge="1" parent="1" source="r3c3" target="r4c3">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-34" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;" edge="1" parent="1" source="r6c3" target="r7c3">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-35" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;" edge="1" parent="1" source="r7c3" target="r8c3">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-36" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#2F855A;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=1.0;entryY=0.5;" edge="1" parent="1" source="r4c3" target="r6c3">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1870" y="1193" />
+              <mxPoint x="1870" y="1593" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-37" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#C05621;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="r5c0" target="r3c0">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="44" y="1393" />
+              <mxPoint x="44" y="993" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-1" name="02-正式发布与异常恢复">
+    <mxGraphModel dx="1800" dy="1730" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1800" pageHeight="1730">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="LexPrism｜正式发布与异常恢复" style="text;html=0;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Microsoft YaHei;fontSize=40;fontColor=#163854;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="72" y="42" width="1656" height="60" />
+        </mxCell>
+        <mxCell id="sub" value="送审前固定 Word；发布时复制同一文件。审阅通过、律师确认、发布成功是三件不同的事。" style="text;html=0;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Microsoft YaHei;fontSize=22;fontColor=#243B53;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="72" y="108" width="1656" height="72" />
+        </mxCell>
+        <mxCell id="footer" value="方案评审 v0.1 · 2026-09-17 · 人工触发对话，后台文件自动管理 · 尚未部署" style="text;html=0;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Microsoft YaHei;fontSize=20;fontColor=#243B53;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="72" y="1678" width="1656" height="35" />
+        </mxCell>
+        <mxCell id="label-0" value="命名：显示名与安全名分开；同名跨事项不合并；保留设备名、非法字符、链接越界及冲突均需处理。" style="text;html=0;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Microsoft YaHei;fontSize=22;fontColor=#243B53;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="80" y="1510" width="1690" height="75" />
+        </mxCell>
+        <mxCell id="label-1" value="恢复：保留发布标识和尝试记录；不凭文件存在即认定成功；不因重试重复产生交付文件。" style="text;html=0;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Microsoft YaHei;fontSize=22;fontColor=#243B53;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="80" y="1565" width="1690" height="75" />
+        </mxCell>
+        <mxCell id="lawyer" value="律师在生成窗口&#10;“准备正式交付”" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#FEEBC8;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="80" y="220" width="420" height="120" />
+        </mxCell>
+        <mxCell id="preflight" value="预检当前版本和发布成果&#10;读取全部有效审阅&#10;核对候选文件与历史" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#DDF1FC;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="690" y="210" width="420" height="140" />
+        </mxCell>
+        <mxCell id="blocked" value="条件不满足：说明具体原因&#10;未审／需修改／待补件／审阅中&#10;回相应阶段，保留草稿" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FEEBC8;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1280" y="210" width="430" height="140" />
+        </mxCell>
+        <mxCell id="confirm" value="链接已审候选文件&#10;确认项目名、文件名和范围&#10;保存律师原话及实际来源" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#FEEBC8;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="690" y="445" width="420" height="140" />
+        </mxCell>
+        <mxCell id="gates" value="重新检查九项发布门槛&#10;最新版本／文件完整／实际独立审阅&#10;有效 PASS／无阻断与必要漏检&#10;无在审／真实确认／名称／安全目标" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=21;fillColor=#DDF1FC;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="690" y="695" width="420" height="160" />
+        </mxCell>
+        <mxCell id="changed" value="确认后有变化&#10;新版本、文件变动或审阅结论变化&#10;确认不能直接沿用&#10;必要时复审并重新确认" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#FEEBC8;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="80" y="685" width="440" height="170" />
+        </mxCell>
+        <mxCell id="copy" value="复制已审、已确认的 Word&#10;事项锁＋输出目标锁&#10;不重新改写，不覆盖旧文件" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#E8F5E9;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="690" y="990" width="420" height="140" />
+        </mxCell>
+        <mxCell id="fail" value="复制失败&#10;已确认，尚未成功发布&#10;保留确认和发布尝试" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#FEEBC8;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1280" y="990" width="430" height="140" />
+        </mxCell>
+        <mxCell id="landed" value="已落盘、登记未完成&#10;标记结果待核对&#10;按归属与文件指纹恢复登记" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#FEEBC8;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="80" y="985" width="440" height="150" />
+        </mxCell>
+        <mxCell id="success" value="登记实际文件、路径及时间&#10;返回正式文件链接&#10;保留 matters 中全过程" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#E8F5E9;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="690" y="1280" width="420" height="140" />
+        </mxCell>
+        <mxCell id="retry" value="律师稍后触发继续发布&#10;条件未变沿用原确认&#10;已成功则返回原文件" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#DDF1FC;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1280" y="1280" width="430" height="140" />
+        </mxCell>
+        <mxCell id="post" value="正式发布后有实质修改&#10;新副本 → 新版本 → 独立审阅&#10;重新确认并新增正式文件" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=22;fillColor=#DDF1FC;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="80" y="1280" width="440" height="140" />
+        </mxCell>
+        <mxCell id="edge-0" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="lawyer" target="preflight">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-1" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="preflight" target="blocked">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-2" value="满足" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;" edge="1" parent="1" source="preflight" target="confirm">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-3" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;" edge="1" parent="1" source="confirm" target="gates">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-4" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#C05621;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.0;exitY=0.5;entryX=1.0;entryY=0.5294117647058824;" edge="1" parent="1" source="gates" target="changed">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-5" value="全部满足" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;" edge="1" parent="1" source="gates" target="copy">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-6" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="copy" target="fail">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-7" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#C05621;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.0;exitY=0.5;entryX=1.0;entryY=0.5;" edge="1" parent="1" source="copy" target="landed">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-8" value="成功" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;" edge="1" parent="1" source="copy" target="success">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-9" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#2D7A9E;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="landed" target="success">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="590" y="1060" />
+              <mxPoint x="590" y="1350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-10" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;" edge="1" parent="1" source="fail" target="retry">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-11" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#2D7A9E;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=1.0;entryY=0.5;" edge="1" parent="1" source="retry" target="gates">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1750" y="1350" />
+              <mxPoint x="1750" y="775" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-2" name="03-Skill与质量闭环">
+    <mxGraphModel dx="1800" dy="1690" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1800" pageHeight="1690">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="LexPrism｜Skill 分工与法律质量闭环" style="text;html=0;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Microsoft YaHei;fontSize=40;fontColor=#163854;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="72" y="42" width="1656" height="60" />
+        </mxCell>
+        <mxCell id="sub" value="复盘改进落在文种、事实与行动条件、完整反馈和全稿复审；文件程序提供记录与边界。" style="text;html=0;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Microsoft YaHei;fontSize=22;fontColor=#243B53;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="72" y="108" width="1656" height="72" />
+        </mxCell>
+        <mxCell id="footer" value="方案评审 v0.1 · 2026-09-17 · 人工触发对话，后台文件自动管理 · 尚未部署" style="text;html=0;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Microsoft YaHei;fontSize=20;fontColor=#243B53;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="72" y="1638" width="1656" height="35" />
+        </mxCell>
+        <mxCell id="label-0" value="实施范围：两个文本 Skill＋共用参考＋两层项目入口＋本地版本与发布程序；绘图 Skill 主体保持原状。" style="text;html=0;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Microsoft YaHei;fontSize=23;fontColor=#243B53;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="80" y="1525" width="1690" height="75" />
+        </mxCell>
+        <mxCell id="h80" value="生成窗口 · lexprism" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=25;fillColor=#DDF1FC;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="80" y="200" width="480" height="75" />
+        </mxCell>
+        <mxCell id="h660" value="共同规则与成果关系" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=25;fillColor=#DDF1FC;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="660" y="200" width="480" height="75" />
+        </mxCell>
+        <mxCell id="h1240" value="审阅窗口 · lexprism-review" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=25;fillColor=#DDF1FC;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1240" y="200" width="480" height="75" />
+        </mxCell>
+        <mxCell id="q00" value="理解委托与本次读者&#10;律师函围绕具体发函目的" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="80" y="340" width="480" height="135" />
+        </mxCell>
+        <mxCell id="q01" value="已有：research、checkpoints&#10;新增：lawyer-letters 文种参考" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="660" y="340" width="480" height="135" />
+        </mxCell>
+        <mxCell id="q02" value="从原始委托检查覆盖&#10;人工样本不自动成为事实" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1240" y="340" width="480" height="135" />
+        </mxCell>
+        <mxCell id="q10" value="先形成有来源的事实与主张&#10;待核事实不写成已核查" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="80" y="530" width="480" height="135" />
+        </mxCell>
+        <mxCell id="q11" value="事实、依据、适用条件分别核对&#10;未知／冲突不能当作行动条件满足" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="660" y="530" width="480" height="135" />
+        </mxCell>
+        <mxCell id="q12" value="独立检查关键原文与适用性&#10;每项费用、请求、后果分别有据" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1240" y="530" width="480" height="135" />
+        </mxCell>
+        <mxCell id="q20" value="生成核验稿与候选 Word&#10;内部策略与对外正文各得其所" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="80" y="720" width="480" height="135" />
+        </mxCell>
+        <mxCell id="q21" value="同成果双视图：实质一致&#10;正文＋说明：主张可回查&#10;备忘录＋函件：事实及行动相容" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="660" y="720" width="480" height="135" />
+        </mxCell>
+        <mxCell id="q22" value="完整读取发布候选与必要材料&#10;内容、脚注与必要页面检查" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1240" y="720" width="480" height="135" />
+        </mxCell>
+        <mxCell id="q30" value="直接读取完整审阅意见&#10;接受处理／有据异议／待补件" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="80" y="910" width="480" height="135" />
+        </mxCell>
+        <mxCell id="q31" value="反馈按目标协调，不机械加句子&#10;修订检查全稿及相关成果&#10;核对新增事实、承诺、费用、期限" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="660" y="910" width="480" height="135" />
+        </mxCell>
+        <mxCell id="q32" value="复核新稿和真实证据&#10;审阅侧确认解决或撤回误报" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1240" y="910" width="480" height="135" />
+        </mxCell>
+        <mxCell id="q40" value="修订完成另存新版本&#10;不覆盖已送审正文，不自批" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="80" y="1100" width="480" height="135" />
+        </mxCell>
+        <mxCell id="q41" value="保留 0.7.1 全稿复审要求&#10;记录真实范围和必要未完成项" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="660" y="1100" width="480" height="135" />
+        </mxCell>
+        <mxCell id="q42" value="核销旧问题后仍通读全稿&#10;通过／需修改／待补件" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1240" y="1100" width="480" height="135" />
+        </mxCell>
+        <mxCell id="q50" value="通过后请律师确认确切文件&#10;发布成功才返回正式交付链接" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="80" y="1290" width="480" height="135" />
+        </mxCell>
+        <mxCell id="q51" value="程序：定位、封存、绑定、门槛&#10;Skill：法律判断与如实执行&#10;律师：事实、立场与最终确认" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="660" y="1290" width="480" height="135" />
+        </mxCell>
+        <mxCell id="q52" value="通过后结束本轮&#10;由律师回生成窗口办理交付" style="rounded=1;arcSize=10;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=23;fillColor=#FFFFFF;strokeColor=#A0AEC0;fontColor=#243B53;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1240" y="1290" width="480" height="135" />
+        </mxCell>
+        <mxCell id="edge-0" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="q00" target="q01">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-1" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="q01" target="q02">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-2" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="q10" target="q11">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-3" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="q11" target="q12">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-4" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="q20" target="q21">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-5" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="q21" target="q22">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-6" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="q30" target="q31">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-7" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="q31" target="q32">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-8" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="q40" target="q41">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-9" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="q41" target="q42">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-10" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="q50" target="q51">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-11" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="q51" target="q52">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-12" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;" edge="1" parent="1" source="q00" target="q10">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-13" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;" edge="1" parent="1" source="q02" target="q12">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-14" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;" edge="1" parent="1" source="q10" target="q20">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-15" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;" edge="1" parent="1" source="q12" target="q22">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-16" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;" edge="1" parent="1" source="q20" target="q30">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-17" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;" edge="1" parent="1" source="q22" target="q32">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-18" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;" edge="1" parent="1" source="q30" target="q40">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-19" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;" edge="1" parent="1" source="q32" target="q42">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-20" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;" edge="1" parent="1" source="q40" target="q50">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-21" value="" style="edgeStyle=none;html=0;endArrow=block;endFill=1;rounded=0;strokeWidth=2;strokeColor=#A0AEC0;fontFamily=Microsoft YaHei;fontSize=18;dashed=0;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;" edge="1" parent="1" source="q42" target="q52">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

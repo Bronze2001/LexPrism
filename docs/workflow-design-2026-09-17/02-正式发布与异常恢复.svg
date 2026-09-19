@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1730" viewBox="0 0 1800 1730" role="img" aria-label="LexPrism｜正式发布与异常恢复">
+<title>LexPrism｜正式发布与异常恢复</title>
+<desc>送审前固定 Word；发布时复制同一文件。审阅通过、律师确认、发布成功是三件不同的事。</desc>
+<rect width="1800" height="1730" fill="#FFFFFF"/>
+<text x="72" y="83" fill="#163854" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="40" text-anchor="start">LexPrism｜正式发布与异常恢复</text>
+<text x="72" y="130" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" text-anchor="start">送审前固定 Word；发布时复制同一文件。审阅通过、律师确认、发布成功是三件不同的事。</text>
+<polyline points="500,280.0 690,280.0" fill="none" stroke="#A0AEC0" stroke-width="3"/><polygon points="690,280.0 678.4690660038693,286.00312928203925 678.4690660038693,273.99687071796075" fill="#A0AEC0"/>
+<polyline points="1110,280.0 1280,280.0" fill="none" stroke="#A0AEC0" stroke-width="3"/><polygon points="1280,280.0 1268.4690660038693,286.00312928203925 1268.4690660038693,273.99687071796075" fill="#A0AEC0"/>
+<polyline points="900.0,350 900.0,445" fill="none" stroke="#A0AEC0" stroke-width="3"/><polygon points="900.0,445 893.9968707179607,433.46906600386933 906.0031292820393,433.46906600386933" fill="#A0AEC0"/>
+<text x="909.0" y="435" fill="#A0AEC0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" text-anchor="start">满足</text>
+<polyline points="900.0,585 900.0,695" fill="none" stroke="#A0AEC0" stroke-width="3"/><polygon points="900.0,695 893.9968707179607,683.4690660038693 906.0031292820393,683.4690660038693" fill="#A0AEC0"/>
+<polyline points="690,775 520,775" fill="none" stroke="#C05621" stroke-width="3"/><polygon points="520,775 531.5309339961307,768.9968707179607 531.5309339961307,781.0031292820393" fill="#C05621"/>
+<polyline points="900.0,855 900.0,990" fill="none" stroke="#A0AEC0" stroke-width="3"/><polygon points="900.0,990 893.9968707179607,978.4690660038693 906.0031292820393,978.4690660038693" fill="#A0AEC0"/>
+<text x="909.0" y="980" fill="#A0AEC0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" text-anchor="start">全部满足</text>
+<polyline points="1110,1060.0 1280,1060.0" fill="none" stroke="#A0AEC0" stroke-width="3"/><polygon points="1280,1060.0 1268.4690660038693,1066.0031292820393 1268.4690660038693,1053.9968707179607" fill="#A0AEC0"/>
+<polyline points="690,1060 520,1060" fill="none" stroke="#C05621" stroke-width="3"/><polygon points="520,1060 531.5309339961307,1053.9968707179607 531.5309339961307,1066.0031292820393" fill="#C05621"/>
+<polyline points="900.0,1130 900.0,1280" fill="none" stroke="#A0AEC0" stroke-width="3"/><polygon points="900.0,1280 893.9968707179607,1268.4690660038693 906.0031292820393,1268.4690660038693" fill="#A0AEC0"/>
+<text x="909.0" y="1270" fill="#A0AEC0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" text-anchor="start">成功</text>
+<polyline points="520,1060 590,1060 590,1350 690,1350" fill="none" stroke="#2D7A9E" stroke-width="3"/><polygon points="690,1350 678.4690660038693,1356.0031292820393 678.4690660038693,1343.9968707179607" fill="#2D7A9E"/>
+<polyline points="1495.0,1130 1495.0,1280" fill="none" stroke="#A0AEC0" stroke-width="3"/><polygon points="1495.0,1280 1488.9968707179607,1268.4690660038693 1501.0031292820393,1268.4690660038693" fill="#A0AEC0"/>
+<polyline points="1710,1350 1750,1350 1750,775 1110,775" fill="none" stroke="#2D7A9E" stroke-width="3"/><polygon points="1110,775 1121.5309339961307,768.9968707179607 1121.5309339961307,781.0031292820393" fill="#2D7A9E"/>
+<rect x="80" y="220" width="420" height="120" rx="12" fill="#FEEBC8" stroke="#A0AEC0" stroke-width="2"/>
+<text x="290.0" y="271.0" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" text-anchor="middle">律师在生成窗口</text>
+<text x="290.0" y="306.0" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" text-anchor="middle">“准备正式交付”</text>
+<rect x="690" y="210" width="420" height="140" rx="12" fill="#DDF1FC" stroke="#A0AEC0" stroke-width="2"/>
+<text x="900.0" y="253.5" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" text-anchor="middle">预检当前版本和发布成果</text>
+<text x="900.0" y="288.5" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" text-anchor="middle">读取全部有效审阅</text>
+<text x="900.0" y="323.5" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" text-anchor="middle">核对候选文件与历史</text>
+<rect x="1280" y="210" width="430" height="140" rx="12" fill="#FEEBC8" stroke="#A0AEC0" stroke-width="2"/>
+<text x="1495.0" y="254.0" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" text-anchor="middle">条件不满足：说明具体原因</text>
+<text x="1495.0" y="288.0" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" text-anchor="middle">未审／需修改／待补件／审阅中</text>
+<text x="1495.0" y="322.0" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" text-anchor="middle">回相应阶段，保留草稿</text>
+<rect x="690" y="445" width="420" height="140" rx="12" fill="#FEEBC8" stroke="#A0AEC0" stroke-width="2"/>
+<text x="900.0" y="488.5" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" text-anchor="middle">链接已审候选文件</text>
+<text x="900.0" y="523.5" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" text-anchor="middle">确认项目名、文件名和范围</text>
+<text x="900.0" y="558.5" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" text-anchor="middle">保存律师原话及实际来源</text>
+<rect x="690" y="695" width="420" height="160" rx="12" fill="#DDF1FC" stroke="#A0AEC0" stroke-width="2"/>
+<text x="900.0" y="733.0" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" text-anchor="middle">重新检查九项发布门槛</text>
+<text x="900.0" y="766.0" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" text-anchor="middle">最新版本／文件完整／实际独立审阅</text>
+<text x="900.0" y="799.0" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" text-anchor="middle">有效 PASS／无阻断与必要漏检</text>
+<text x="900.0" y="832.0" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" text-anchor="middle">无在审／真实确认／名称／安全目标</text>
+<rect x="80" y="685" width="440" height="170" rx="12" fill="#FEEBC8" stroke="#A0AEC0" stroke-width="2"/>
+<text x="300.0" y="727.0" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" text-anchor="middle">确认后有变化</text>
+<text x="300.0" y="761.0" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" text-anchor="middle">新版本、文件变动或审阅结论变化</text>
+<text x="300.0" y="795.0" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" text-anchor="middle">确认不能直接沿用</text>
+<text x="300.0" y="829.0" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" text-anchor="middle">必要时复审并重新确认</text>
+<rect x="690" y="990" width="420" height="140" rx="12" fill="#E8F5E9" stroke="#A0AEC0" stroke-width="2"/>
+<text x="900.0" y="1033.5" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" text-anchor="middle">复制已审、已确认的 Word</text>
+<text x="900.0" y="1068.5" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" text-anchor="middle">事项锁＋输出目标锁</text>
+<text x="900.0" y="1103.5" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" text-anchor="middle">不重新改写，不覆盖旧文件</text>
+<rect x="1280" y="990" width="430" height="140" rx="12" fill="#FEEBC8" stroke="#A0AEC0" stroke-width="2"/>
+<text x="1495.0" y="1033.5" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" text-anchor="middle">复制失败</text>
+<text x="1495.0" y="1068.5" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" text-anchor="middle">已确认，尚未成功发布</text>
+<text x="1495.0" y="1103.5" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" text-anchor="middle">保留确认和发布尝试</text>
+<rect x="80" y="985" width="440" height="150" rx="12" fill="#FEEBC8" stroke="#A0AEC0" stroke-width="2"/>
+<text x="300.0" y="1033.5" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" text-anchor="middle">已落盘、登记未完成</text>
+<text x="300.0" y="1068.5" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" text-anchor="middle">标记结果待核对</text>
+<text x="300.0" y="1103.5" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" text-anchor="middle">按归属与文件指纹恢复登记</text>
+<rect x="690" y="1280" width="420" height="140" rx="12" fill="#E8F5E9" stroke="#A0AEC0" stroke-width="2"/>
+<text x="900.0" y="1323.5" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" text-anchor="middle">登记实际文件、路径及时间</text>
+<text x="900.0" y="1358.5" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" text-anchor="middle">返回正式文件链接</text>
+<text x="900.0" y="1393.5" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" text-anchor="middle">保留 matters 中全过程</text>
+<rect x="1280" y="1280" width="430" height="140" rx="12" fill="#DDF1FC" stroke="#A0AEC0" stroke-width="2"/>
+<text x="1495.0" y="1323.5" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" text-anchor="middle">律师稍后触发继续发布</text>
+<text x="1495.0" y="1358.5" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" text-anchor="middle">条件未变沿用原确认</text>
+<text x="1495.0" y="1393.5" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" text-anchor="middle">已成功则返回原文件</text>
+<rect x="80" y="1280" width="440" height="140" rx="12" fill="#DDF1FC" stroke="#A0AEC0" stroke-width="2"/>
+<text x="300.0" y="1324.0" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" text-anchor="middle">正式发布后有实质修改</text>
+<text x="300.0" y="1358.0" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" text-anchor="middle">新副本 → 新版本 → 独立审阅</text>
+<text x="300.0" y="1392.0" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" text-anchor="middle">重新确认并新增正式文件</text>
+<text x="80" y="1532" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" text-anchor="start">命名：显示名与安全名分开；同名跨事项不合并；保留设备名、非法字符、链接越界及冲突均需处理。</text>
+<text x="80" y="1587" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" text-anchor="start">恢复：保留发布标识和尝试记录；不凭文件存在即认定成功；不因重试重复产生交付文件。</text>
+<text x="72" y="1698" fill="#243B53" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" text-anchor="start">方案评审 v0.1 · 2026-09-17 · 律师手动触发对话，文件程序按触发执行 · 尚未部署</text>
+</svg>

@@ -55,6 +55,11 @@ class WorkflowTests(unittest.TestCase):
         result["checks"] = {key: {"status": "PASS", "evidence": "仅对合成材料验证登记逻辑。"} for key in w.CHECKS}
         if change:
             change(result)
+        for finding in result["findings"]:
+            finding.setdefault("kind", "error" if finding["blocking"] else "preference")
+            finding.setdefault("basis", "合成材料与明确测试要求，仅检验程序行为。")
+            if finding["status"] == "RESOLVED":
+                finding.setdefault("resolution", "合成复审记录：已核对修订内容。")
         (folder / "result.json").write_bytes(w.json_bytes(result))
         (folder / "REVIEW.md").write_text("# 合成审阅\n本文件仅用于程序测试。", encoding="utf-8")
         return result
@@ -72,6 +77,147 @@ class WorkflowTests(unittest.TestCase):
         self.assertEqual(w.finish_review(self.root, second_review)["current_status"], "PASS")
         self.assertEqual(original, (self.root / "versions" / first / "files/clean.md").read_bytes())
         self.assertIn("修订后的合成事实", (self.root / "versions" / second / "CHANGES.md").read_text(encoding="utf-8"))
+
+    def test_discovery_finds_sibling_matter_without_writing(self):
+        workspace = self.root.parent / "workspace"
+        matter = workspace / "matters" / "client-a"
+        w.init_project(matter, "client-a")
+        before = w.inventory(workspace)
+        result = w.discover(workspace)
+        self.assertEqual(result["matters"][0]["root"], str(matter.resolve()))
+        self.assertFalse(result["selection_required"])
+        self.assertEqual(before, w.inventory(workspace))
+        w.init_project(workspace / "matters" / "client-b", "client-b")
+        self.assertTrue(w.discover(workspace)["selection_required"])
+
+    def test_discovery_reports_bad_state_and_does_not_scan_other_folders(self):
+        workspace = self.root.parent / "workspace"
+        broken = workspace / "matters" / "broken"
+        broken.mkdir(parents=True)
+        (broken / "state.json").write_text("{}", encoding="utf-8")
+        w.init_project(workspace / "unrelated" / "hidden", "hidden")
+        result = w.discover(workspace)
+        self.assertEqual(result["matters"], [])
+        self.assertEqual(len(result["errors"]), 1)
+        self.assertTrue(result["selection_required"])
+
+    def test_pair_detects_orphan_undefined_duplicate_and_body_drift(self):
+        folder = Path(self.draft()["files"])
+        a = "title\n<!-- start -->\n结论[^a]。\n[^a]: 来源\n[^orphan]: 未使用\n<!-- end -->"
+        b = a.replace("结论[^a]", "改变后的结论[^missing]") + "\n[^a]: 重复\n"
+        (folder / "verification.md").write_text(a, encoding="utf-8")
+        (folder / "clean.md").write_text(b, encoding="utf-8")
+        before = w.inventory(folder)
+        result = w.check_pair(folder, "verification.md", "clean.md", "<!-- start -->", "<!-- end -->")
+        notes = result["files"]["clean"]["footnotes"]
+        self.assertEqual(notes["undefined"], ["missing"])
+        self.assertEqual(notes["unused"], ["a", "orphan"])
+        self.assertEqual(notes["duplicates"], ["a"])
+        self.assertEqual(result["common_body"], "DIFFERENT")
+        self.assertEqual(result["legal_review"], "NOT_PERFORMED")
+        self.assertEqual(before, w.inventory(folder))
+
+    def test_pair_does_not_guess_body_and_checks_explicit_boundaries(self):
+        folder = Path(self.draft()["files"])
+        self.assertEqual(w.check_pair(folder, "verification.md", "clean.md")["common_body"], "NOT_CHECKED")
+        with self.assertRaisesRegex(w.WorkflowError, "exactly once"):
+            w.check_pair(folder, "verification.md", "clean.md", "MISSING_START", "MISSING_END")
+        with self.assertRaises(w.WorkflowError):
+            w.check_pair(folder, "verification.md", "../state.json")
+        text = "<!-- start -->正文[^1]\n[^1]: 来源\n<!-- end -->"
+        for name in ("verification.md", "clean.md"):
+            (folder / name).write_text(text, encoding="utf-8")
+        self.assertEqual(w.check_pair(folder, "verification.md", "clean.md", "<!-- start -->", "<!-- end -->")["common_body"], "IDENTICAL")
+
+    def test_footnotes_ignore_definitions_code_and_escaped_references(self):
+        text = "正文[^1]\n[^1]: 来源\n    续行中的[^not_body]\n\n```md\n[^code]\n```\n`[^inline]` 与 \\[^^escape] 和 \\[^escaped]"
+        self.assertEqual(w.markdown_footnotes(text), {"undefined": [], "unused": [], "duplicates": []})
+
+    def test_unverified_core_finding_is_pending_even_if_dimensions_say_pass(self):
+        self.submit()
+        rid = self.review()
+        self.result(rid, lambda r: r["findings"].append({
+            "id": "I003", "kind": "unverified", "blocking": True, "status": "OPEN",
+            "reason": "现行依据欠缺", "requested_change": "补充依据", "acceptance": "复核材料",
+            "anchor": {"version": "v0001", "file": "clean.md", "scope": "document"}}))
+        self.assertEqual(w.finish_review(self.root, rid)["verdict"], "PENDING")
+
+    def test_new_review_cannot_drop_protocol_or_resolve_without_reason(self):
+        self.submit()
+        rid = self.review()
+        result = self.result(rid)
+        path = self.root / "reviews" / rid / "result.json"
+        result.pop("review_protocol")
+        path.write_bytes(w.json_bytes(result))
+        with self.assertRaisesRegex(w.WorkflowError, "protocol cannot change"):
+            w.finish_review(self.root, rid)
+        result["review_protocol"] = 2
+        finding = {"id": "I004", "kind": "error", "basis": "具体合成证据", "blocking": True,
+                   "status": "RESOLVED", "reason": "测试", "requested_change": "修正", "acceptance": "复核",
+                   "anchor": {"version": "v0001", "file": "clean.md", "scope": "document"}}
+        result["findings"] = [finding]
+        path.write_bytes(w.json_bytes(result))
+        with self.assertRaisesRegex(w.WorkflowError, "Resolved findings require"):
+            w.finish_review(self.root, rid)
+        finding["resolution"] = "复核实际原文后撤回误报，原文确有相应记载。"
+        path.write_bytes(w.json_bytes(result))
+        self.assertEqual(w.finish_review(self.root, rid)["verdict"], "PASS")
+
+    def test_correction_requires_basis_and_preference_cannot_block(self):
+        self.submit()
+        rid = self.review()
+        result = self.result(rid, lambda r: r["findings"].append({
+            "id": "I005", "blocking": True, "status": "OPEN", "reason": "测试", "requested_change": "修正",
+            "acceptance": "复核", "anchor": {"version": "v0001", "file": "clean.md", "scope": "document"}}))
+        path = self.root / "reviews" / rid / "result.json"
+        result["findings"][0].pop("basis")
+        path.write_bytes(w.json_bytes(result))
+        with self.assertRaisesRegex(w.WorkflowError, "requires basis"):
+            w.finish_review(self.root, rid)
+        result["findings"][0].update(basis="措辞偏好", kind="preference")
+        path.write_bytes(w.json_bytes(result))
+        with self.assertRaisesRegex(w.WorkflowError, "preference cannot block"):
+            w.finish_review(self.root, rid)
+
+    def test_legacy_open_review_remains_readable_without_rewriting_history(self):
+        self.submit()
+        rid = self.review()
+        # Model an actual pre-upgrade record, which had no protocol marker.
+        state = w.state_at(self.root)
+        state["reviews"][rid].pop("review_protocol")
+        (self.root / "state.json").write_bytes(w.json_bytes(state))
+        result = self.result(rid)
+        result.pop("review_protocol")
+        (self.root / "reviews" / rid / "result.json").write_bytes(w.json_bytes(result))
+        self.assertEqual(w.finish_review(self.root, rid)["verdict"], "PASS")
+
+    def test_publication_retries_brief_windows_contention(self):
+        original_rename = Path.rename
+        calls = []
+        def interrupted_rename(source, destination):
+            calls.append(source)
+            if len(calls) == 1:
+                error = PermissionError("simulated Windows contention")
+                error.winerror = 32
+                raise error
+            return original_rename(source, destination)
+        draft = self.draft()
+        with patch.object(Path, "rename", interrupted_rename), patch.object(w.time, "sleep") as sleep:
+            self.assertEqual(self.submit(draft), "v0001")
+            sleep.assert_called_once_with(0.05)
+        self.assertEqual(len(calls), 2)
+
+    def test_permanent_publication_denial_leaves_submission_unregistered(self):
+        draft = self.draft()
+        error = PermissionError("simulated persistent denial")
+        error.winerror = 5
+        with patch.object(Path, "rename", side_effect=error) as rename, patch.object(w.time, "sleep"):
+            with self.assertRaises(PermissionError):
+                self.submit(draft)
+        self.assertEqual(rename.call_count, 4)
+        self.assertIsNone(w.state_at(self.root)["head"])
+        self.assertTrue((Path(draft["files"]) / "clean.md").is_file())
+        self.assertFalse((self.root / "versions" / "v0001").exists())
 
     def test_two_writers_cannot_overwrite_new_head(self):
         a, b = self.draft(), self.draft("generation-b")

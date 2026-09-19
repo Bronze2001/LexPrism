@@ -1,0 +1,37 @@
+{
+  "lexprism": {
+    "name_en": "LexPrism Legal Research and Drafting",
+    "name_zh": "LexPrism 法律研究与文书",
+    "description_en": "Research legal questions, draft legal opinions and demand letters, review contracts, prepare research or due diligence reports and business environment or overseas investment compliance guides, and revise from feedback for lawyers. Start directly from requests and materials. Use lexprism-review for independent verification and drawio-diagram for diagrams alone.",
+    "argument-hint-en": "Describe your legal question or provide the document and desired result",
+    "argument-hint-zh": "直接说法律问题，或提供材料并说明想要的文书",
+    "examples": [
+      {"id": "legal-question", "title": {"zh": "查规定", "en": "Research a rule"}, "description": {"zh": "直接回答问题，保留依据和关键前提", "en": "Answer with sources and necessary qualifications"}, "prompt": {"zh": "请帮我查清这个法律问题：{{问题}}。先给简明答复，列明依据及影响结论的条件。", "en": "Research this legal question: {{question}}. Give a concise answer with sources and conditions that affect the conclusion."}},
+      {"id": "draft-document", "title": {"zh": "起草文书", "en": "Draft a document"}, "description": {"zh": "从材料起草可编辑法律文书", "en": "Draft an editable legal document from materials"}, "prompt": {"zh": "根据这些材料：{{材料}}，起草一份{{文书类型}}，供{{读者}}使用。请提供 Word 文稿及必要的核验说明。", "en": "Using these materials: {{materials}}, draft a {{document type}} for {{reader}}. Provide a Word draft with verification notes."}},
+      {"id": "review-contract", "title": {"zh": "审查合同", "en": "Review a contract"}, "description": {"zh": "按委托立场提出风险与修改建议", "en": "Identify risks and edits from the client's position"}, "prompt": {"zh": "请代表{{委托方}}审查这份合同：{{合同}}。说明重大风险、对应条款和修改建议。", "en": "Review this contract for {{client}}: {{contract}}. Identify material risks, clause locations, and recommended edits."}},
+      {"id": "revise-document", "title": {"zh": "按意见修改", "en": "Revise from feedback"}, "description": {"zh": "读取文稿和意见，保留版本与修改说明", "en": "Revise a draft and explain how feedback was handled"}, "prompt": {"zh": "请按{{审阅意见}}修改{{文稿}}，保留原稿，说明已处理和仍待确认的内容。", "en": "Revise {{draft}} using {{review feedback}}, preserve the original, and explain handled and unresolved points."}}
+    ]
+  },
+  "lexprism-review": {
+    "name_en": "LexPrism Legal Document Verification",
+    "name_zh": "LexPrism 法律文稿复核",
+    "description_en": "Independently verify a legal opinion, research report, business environment or overseas investment compliance guide, or contract review work product for a lawyer. Check sources, coverage, conditions, and revisions from actual files without requiring project setup. Use lexprism to draft or directly review a contract. Copyediting alone is not independent legal verification.",
+    "argument-hint-en": "Provide the draft and relevant materials, or specify the revision to review",
+    "argument-hint-zh": "提供文稿和相关依据，或说明需要复审的修改稿",
+    "examples": [
+      {"id": "verify-draft", "title": {"zh": "独立复核文稿", "en": "Verify a draft"}, "description": {"zh": "检查依据、漏项和影响结论的条件", "en": "Check support, omissions, and material conditions"}, "prompt": {"zh": "请独立复核{{文稿}}及其相关材料，原始要求是{{要求}}。给出有定位和依据的意见，缺材料时说明影响，不直接修改正文。", "en": "Independently verify {{draft}} and its materials against {{original request}}. Give located, evidence-based findings and explain missing materials without editing the draft."}},
+      {"id": "verify-revision", "title": {"zh": "复审修改稿", "en": "Review a revision"}, "description": {"zh": "核对实际修改是否解决旧问题", "en": "Check whether the revision resolves earlier findings"}, "prompt": {"zh": "请复审{{修改稿}}，对照{{旧稿和审阅意见}}逐项确认问题是否解决，检查修改影响的结论与引注。", "en": "Review {{revised draft}} against {{prior draft and findings}}, verify each resolution, and check affected conclusions and citations."}}
+    ]
+  },
+  "drawio-diagram": {
+    "name_en": "LexPrism Equity and Transaction Diagrams",
+    "name_zh": "LexPrism 股权与交易图",
+    "description_en": "Create editable equity ownership and transaction structure diagrams from entities, ownership percentages, relationships, and deal steps. Deliver a drawio file and preview. Use for diagrams, not full legal reports or legal verification.",
+    "argument-hint-en": "Provide the entities and ownership relationships or transaction steps",
+    "argument-hint-zh": "提供主体、持股关系，或说明交易步骤",
+    "examples": [
+      {"id": "equity-diagram", "title": {"zh": "画股权结构图", "en": "Draw an ownership structure"}, "description": {"zh": "从持股关系生成可编辑结构图", "en": "Create an editable ownership diagram"}, "prompt": {"zh": "请根据这些主体和持股关系画股权结构图：{{关系}}。提供预览和可编辑文件。", "en": "Draw an ownership structure from these entities and stakes: {{relationships}}. Provide a preview and editable file."}},
+      {"id": "transaction-diagram", "title": {"zh": "画交易结构图", "en": "Draw transaction steps"}, "description": {"zh": "展示交易主体、步骤和资金流向", "en": "Show deal participants, steps, and fund flows"}, "prompt": {"zh": "把这些交易步骤画成交易结构图：{{交易步骤}}。保留前置条件和资金方向，提供可编辑文件。", "en": "Diagram these transaction steps: {{steps}}. Preserve conditions and fund-flow directions and provide an editable file."}}
+    ]
+  }
+}

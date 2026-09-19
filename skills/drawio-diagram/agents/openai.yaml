@@ -1,0 +1,4 @@
+interface:
+  display_name: "LexPrism 股权与交易图"
+  short_description: "根据主体、持股比例和交易步骤生成可编辑的股权结构图或交易结构图"
+  default_prompt: "用 $drawio-diagram 根据我提供的主体与关系画一张可编辑结构图。"

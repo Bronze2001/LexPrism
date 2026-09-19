@@ -1,0 +1,4 @@
+interface:
+  display_name: "LexPrism 法律文稿复核"
+  short_description: "复核法律文稿的依据、漏项和关键前提，提供有定位和证据的审阅意见"
+  default_prompt: "用 $lexprism-review 独立复核这份文稿，指出有依据的问题和需要补充的材料。"

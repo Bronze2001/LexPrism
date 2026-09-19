@@ -2,7 +2,7 @@
 name: drawio-diagram
 description: 专注于【股权结构图】（境内穿透、跨境出海ODI、协议控制VIE与动态并购变动）与【交易结构图】（步骤与资金交割流向）的高保真生成与可编辑交付。基于红圈所涉外标准设计，支持典雅藏青涉外风与清爽冰蓝现代并购风，具备跨境法域分隔、总线式汇流与确定性法律数据闭环，输出完全兼容本地 Draw.io 工作台（tools/drawio/index.html）及 VS Code 的原生可编辑 .drawio 矢量图。
 metadata:
-  version: 0.3.0-crossborder-modern
+  version: 0.3.1-lawyer-handoff
 ---
 
 # Draw.io 股权与交易流程图生成器 (Equity & Transaction Diagrams)
@@ -34,11 +34,11 @@ metadata:
 
 ### 1. 成果输出形式
 - **直接保存为本地 `.drawio` 文件**：存放在当前项目成果目录（如 `drawings/cross_border_equity.drawio` 或 `drawings/equity_transition.drawio`）；
-- **对话中输出原生 `<mxfile>...</mxfile>` XML 代码块**：用户可一键复制。
+- **对话展示预览和可编辑文件链接**；仅在用户要源码或宿主不能保存文件时提供 XML，不让律师以复制代码作为默认使用步骤。
 
 ### 2. 用户可编辑方式 (Three Editing Options)
-- **方式 A（本地工作台一键编辑 - 推荐）**：
-  双击打开项目内置的 `tools/drawio/index.html`，点击顶部 **【⚡ 导入 Agent 代码】**，粘贴 XML 代码，图表立即呈现在画布上；用户可自由拖拽调整主体位置、双击修改持股比例或增减法域，按 `Ctrl+S` 原路写回本地文件。
+- **方式 A（直接打开文件 - 推荐）**：
+  使用实际可用的 Draw.io 编辑器打开已保存的 `.drawio` 文件。若使用项目工作台 `tools/drawio/index.html`，先确认它实际支持的文件导入方式；只有需要时再说明代码导入，不默认要求复制 XML。
 - **方式 B（VS Code 内嵌编辑）**：
   在 VS Code 中安装 `Draw.io Integration` 插件，直接点击生成的 `.drawio` 文件即可在代码编辑器内所见即所得绘图。
 - **方式 C（官方客户端 / 网页版）**：
@@ -47,6 +47,8 @@ metadata:
 ---
 
 ## 图表生成与质量控制规程 (Generation Protocol)
+
+由法律文书任务带入时直接使用其已提供的主体、关系／比例、交易步骤、基准日和相关依据，不让律师重新填 JSON。缺少会改变图意的数据才询问；纯结构示意未做法律定性时注明范围，不为了图上的法域或控制权文字补造法律判断。将图保存在该文稿的成果目录；已登记项目使用实际返回的 `files/drawings/`。本技能负责图形数据与视觉自检；与文稿结论是否一致由实际文稿审阅核对，任何一方通过不代表另一方已完成。
 
 1. **三问前置原则**：
    - **What Claim?**（如：中国母公司通过协议控制印尼工程公司，张某某转让 30% 股权后仍保留 60% 绝对控股权）；

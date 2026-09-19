@@ -1,0 +1,131 @@
+{
+  "configuration_source_date": "2026-09-11",
+  "package_date": "2026-09-17",
+  "runtime_version": "0.8.0-two-window",
+  "transport_reference": "https://help.aliyun.com/zh/qwenwork/desktop-connectors",
+  "eurlex_metadata_reference": "https://github.com/cyanheads/eur-lex-mcp-server/blob/main/package.json",
+  "eurlex_node_requirement": ">=24.0.0",
+  "verification": "JSON structure and credential placeholders checked; no live service health or target Qwen acceptance claim.",
+  "services": [
+    {
+      "name": "pkulaw-law-search",
+      "transport": "streamable-http",
+      "optional": false,
+      "authentication": "private Bearer token",
+      "live_verification": "NOT_PERFORMED_THIS_RELEASE",
+      "source": "project redacted configuration snapshot 2026-09-11"
+    },
+    {
+      "name": "pkulaw-law-keyword",
+      "transport": "streamable-http",
+      "optional": false,
+      "authentication": "private Bearer token",
+      "live_verification": "NOT_PERFORMED_THIS_RELEASE",
+      "source": "project redacted configuration snapshot 2026-09-11"
+    },
+    {
+      "name": "pkulaw-case-semantic-search",
+      "transport": "streamable-http",
+      "optional": false,
+      "authentication": "private Bearer token",
+      "live_verification": "NOT_PERFORMED_THIS_RELEASE",
+      "source": "project redacted configuration snapshot 2026-09-11"
+    },
+    {
+      "name": "pkulaw-case-keyword",
+      "transport": "streamable-http",
+      "optional": false,
+      "authentication": "private Bearer token",
+      "live_verification": "NOT_PERFORMED_THIS_RELEASE",
+      "source": "project redacted configuration snapshot 2026-09-11"
+    },
+    {
+      "name": "pkulaw-law-item-keyword",
+      "transport": "streamable-http",
+      "optional": false,
+      "authentication": "private Bearer token",
+      "live_verification": "NOT_PERFORMED_THIS_RELEASE",
+      "source": "project redacted configuration snapshot 2026-09-11"
+    },
+    {
+      "name": "pkulaw-law-recognition",
+      "transport": "streamable-http",
+      "optional": false,
+      "authentication": "private Bearer token",
+      "live_verification": "NOT_PERFORMED_THIS_RELEASE",
+      "source": "project redacted configuration snapshot 2026-09-11"
+    },
+    {
+      "name": "pkulaw-case-number-recognition",
+      "transport": "streamable-http",
+      "optional": false,
+      "authentication": "private Bearer token",
+      "live_verification": "NOT_PERFORMED_THIS_RELEASE",
+      "source": "project redacted configuration snapshot 2026-09-11"
+    },
+    {
+      "name": "pkulaw-citation-validator",
+      "transport": "streamable-http",
+      "optional": false,
+      "authentication": "private Bearer token",
+      "live_verification": "NOT_PERFORMED_THIS_RELEASE",
+      "source": "project redacted configuration snapshot 2026-09-11"
+    },
+    {
+      "name": "pkulaw-doc-link",
+      "transport": "streamable-http",
+      "optional": false,
+      "authentication": "private Bearer token",
+      "live_verification": "NOT_PERFORMED_THIS_RELEASE",
+      "source": "project redacted configuration snapshot 2026-09-11"
+    },
+    {
+      "name": "eur-lex-mcp-server",
+      "transport": "stdio",
+      "optional": true,
+      "authentication": "according to provider and target host",
+      "live_verification": "NOT_PERFORMED_THIS_RELEASE",
+      "source": "project redacted configuration snapshot 2026-09-11"
+    },
+    {
+      "name": "federal-regulations-mcp-server",
+      "transport": "streamable-http",
+      "optional": true,
+      "authentication": "according to provider and target host",
+      "live_verification": "NOT_PERFORMED_THIS_RELEASE",
+      "source": "project redacted configuration snapshot 2026-09-11"
+    },
+    {
+      "name": "lex-uk-legislation",
+      "transport": "streamable-http",
+      "optional": true,
+      "authentication": "according to provider and target host",
+      "live_verification": "NOT_PERFORMED_THIS_RELEASE",
+      "source": "project redacted configuration snapshot 2026-09-11"
+    },
+    {
+      "name": "pipeworx-us-case-law",
+      "transport": "streamable-http",
+      "optional": true,
+      "authentication": "according to provider and target host",
+      "live_verification": "NOT_PERFORMED_THIS_RELEASE",
+      "source": "project redacted configuration snapshot 2026-09-11"
+    },
+    {
+      "name": "pipeworx-legal",
+      "transport": "streamable-http",
+      "optional": true,
+      "authentication": "according to provider and target host",
+      "live_verification": "NOT_PERFORMED_THIS_RELEASE",
+      "source": "project redacted configuration snapshot 2026-09-11"
+    },
+    {
+      "name": "overview-legal",
+      "transport": "streamable-http",
+      "optional": true,
+      "authentication": "according to provider and target host",
+      "live_verification": "NOT_PERFORMED_THIS_RELEASE",
+      "source": "project redacted configuration snapshot 2026-09-11"
+    }
+  ]
+}
